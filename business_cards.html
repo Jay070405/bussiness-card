@@ -26,6 +26,10 @@
             l: '/in/jaylin'
         };
 
+        const icoW = `<svg class="ico" viewBox="0 0 24 24"><path d="M8.5 14.5c-2.5 0-4.5-1.7-4.5-3.8 0-2.1 2-3.8 4.5-3.8s4.5 1.7 4.5 3.8c0 2.1-2 3.8-4.5 3.8zm0-6.6c-1.8 0-3.2 1.2-3.2 2.7 0 1.5 1.4 2.7 3.2 2.7 1.8 0 3.2-1.2 3.2-2.7 0-1.5-1.4-2.7-3.2-2.7zm8.5 10c-2.1 0-3.8-1.4-3.8-3.1 0-1.7 1.7-3.1 3.8-3.1 2.1 0 3.8 1.4 3.8 3.1 0 1.7-1.7 3.1-3.8 3.1zm0-5.3c-1.4 0-2.5 1-2.5 2.2 0 1.2 1.1 2.2 2.5 2.2 1.4 0 2.5-1 2.5-2.2 0-1.2-1.1-2.2-2.5-2.2z"/></svg>`;
+        const icoL = `<svg class="ico" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>`;
+        const icoG = `<svg class="ico" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.535 5.567l-2.091 1.724c.734.908 1.621 1.626 2.607 2.115l1.092-2.433c-.636-.312-1.205-.802-1.608-1.406zm7.07 0c-.403.604-.972 1.094-1.608 1.406l1.092 2.433c.986-.489 1.873-1.207 2.607-2.115l-2.091-1.724zm-3.535 7.925v3.508h2v-3.508h-2z"/></svg>`;
+
         const cards = [
             {
                 l: '01. AWAKEN (CYBER ANIME)', cls: 'glass',
@@ -128,35 +132,33 @@
                 </div>`
             },
             {
-                l: '05. CYBER TERMINAL (HACKER)', cls: 'glass',
-                f: `<div class="f-term c-f c">
-                    <div class="term-header">/USER: JAY LIN</div>
-                    <div class="term-body">> INITIALIZING CONCEPT ENGINE...<br>> STATUS: ONLINE<br>_</div>
+                l: '05. MINIMAL CLAY', cls: 'matte',
+                f: `<div class="f-clay c-f c">
+                    <div class="clay-circle">JL</div>
                 </div>`,
-                b: `<div class="b-term c-b c">
-                    <div class="term-data">
-                        <span class="term-lbl">ROLE</span> ${p.r}<br>
-                        <span class="term-lbl">MAIL</span> ${p.e}<br>
-                        <span class="term-lbl">COMM</span> ${p.v}<br>
-                        <span class="term-lbl">LNK</span> ${p.w}
+                b: `<div class="b-clay c-b c">
+                    <div>
+                        <div style="font-size: 24px; font-weight: 700; color: #333;">${p.n}</div>
+                        <div style="font-size: 14px; color: #888;">${p.r}</div>
                     </div>
+                    <div class="clay-bar">${icoW} ${p.v}</div>
+                    <div class="clay-bar">${icoG} ${p.w}</div>
+                    <div class="clay-bar">${icoL} ${p.l}</div>
                 </div>`
             },
             {
-                l: '06. ARCHIVE DOSSIER (CLASSIFIED)', cls: 'matte',
-                f: `<div class="f-dossier c-f c">
-                    <div class="doss-stamp">TOP SECRET</div>
-                    <div class="doss-title">SUBJECT: JAY LIN</div>
-                    <div class="doss-id">ID: 006-ART</div>
-                </div>`,
-                b: `<div class="b-dossier c-b c">
-                    <div class="doss-photo"></div>
-                    <div class="doss-specs">
-                        <div>NAME: ${p.n}</div>
-                        <div>SPECIALTY: ${p.r}</div>
-                        <div>CONTACT: ${p.e}</div>
-                        <div>LOC: ${p.w}</div>
+                l: '06. ABSTRACT MESH', cls: 'glass',
+                f: `<div class="f-mesh c-f c">
+                    <div class="mesh-glass">
+                        <div class="mesh-name">Jay Lin</div>
+                        <div class="mesh-title">Concept Art Director</div>
                     </div>
+                </div>`,
+                b: `<div class="b-mesh c-b c">
+                    <div class="mesh-row" style="opacity:0.5;">CONTACT LOG_01</div>
+                    <div class="mesh-row">${icoW} Wechat: ${p.v}</div>
+                    <div class="mesh-row">${icoG} Web: ${p.w}</div>
+                    <div class="mesh-row">${icoL} Linking: ${p.l}</div>
                 </div>`
             },
             {
@@ -198,44 +200,45 @@
                 </div>`
             },
             {
-                l: '10. TYPOGRAPHIC GRID', cls: 'matte',
-                f: `<div class="f-grid c-f c">
-                    <div>JAY</div><div>LIN</div>
-                    <div>ART</div><div>DIR</div>
+                l: '10. GEOMETRIC TOPOLOGY', cls: 'matte',
+                f: `<div class="f-topo c-f c">
+                    <div class="topo-pattern"></div>
+                    <div class="topo-text">JL</div>
                 </div>`,
-                b: `<div class="b-grid c-b c">
-                    <div class="grid-side">INFO</div>
-                    <div class="grid-main">
-                        <div>${p.r}</div>
-                        <div>${p.e}</div>
-                        <div>${p.w}</div>
-                    </div>
+                b: `<div class="b-topo c-b c">
+                    <div class="topo-info">${p.n}</div>
+                    <div class="topo-sub">${p.r}</div>
+                    <div class="topo-row">${icoW} ${p.v}</div>
+                    <div class="topo-row">${icoG} ${p.w}</div>
+                    <div class="topo-row">${icoL} ${p.l}</div>
                 </div>`
             },
             {
-                l: '11. GLITCH CRT', cls: 'glass',
-                f: `<div class="f-crt c-f c">
-                    <div class="crt-txt" data-text="JAY LIN">JAY LIN</div>
+                l: '11. SWISS POSTER', cls: 'matte',
+                f: `<div class="f-swiss c-f c">
+                    <div class="swiss-header">JAY LIN</div>
+                    <div class="swiss-footer">DESIGN<br>SYSTEM</div>
                 </div>`,
-                b: `<div class="b-crt c-b c">
-                    <div class="crt-info">
-                        ERROR 404: ARTIST FOUND<br>
-                        ${p.r}<br>
-                        ${p.e}<br>
-                        ${p.w}
-                    </div>
+                b: `<div class="b-swiss c-b c">
+                    <div class="swiss-block">${icoW} ${p.v}</div>
+                    <div class="swiss-block">${icoG} ${p.w}</div>
+                    <div class="swiss-block">${icoL} ${p.l}</div>
                 </div>`
             },
             {
-                l: '12. CYANOTYPE BLUEPRINT', cls: 'matte',
-                f: `<div class="f-blue c-f c">
-                    <div class="blue-grid"></div>
-                    <div class="blue-title">DESIGN_SCHEMATIC: JL</div>
+                l: '12. OBSIDIAN GLASS', cls: 'glass',
+                f: `<div class="f-obs c-f c">
+                    <div class="obs-glass">
+                        <div class="obs-title">Jay Lin</div>
+                    </div>
                 </div>`,
-                b: `<div class="b-blue c-b c">
-                    <div class="blue-row"><span>SPECS</span> ${p.r}</div>
-                    <div class="blue-row"><span>COMMS</span> ${p.e}</div>
-                    <div class="blue-row"><span>NODE</span> ${p.w}</div>
+                b: `<div class="b-obs c-b c">
+                    <div class="obs-list">
+                        <div class="obs-item">${icoW} ${p.v}</div>
+                        <div class="obs-item">${icoG} ${p.w}</div>
+                        <div class="obs-item">${icoL} ${p.l}</div>
+                    </div>
+                    <div class="obs-logo">JL</div>
                 </div>`
             },
             {

@@ -18,18 +18,35 @@ body {
     color: #fff;
     font-family: var(--font-ui);
     margin: 0;
-    padding: 120px 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    gap: 240px;
+    justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
     /* Ambient Dark Room Grid */
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 100px 100px;
-    background-attachment: fixed;
+}
+
+#carousel-stage {
+    width: 100%;
+    height: 100%;
+    perspective: 3000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel-ring {
+    width: 480px;
+    height: 270px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.1s linear;
+    /* Interrupted by JS for smooth inertia */
 }
 
 h1 {
@@ -44,12 +61,25 @@ h1 {
 
 /* ================= 3D INTERACTION CORE ================= */
 .scene {
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 270px;
+    /* The individual transform (rotateY and translateZ) will be applied via JS */
+    transform-style: preserve-3d;
+    transition: opacity 0.5s;
+    /* The label now sits below or above inside the 3D space */
 }
 
-.scene:hover {
-    z-index: 100;
+/* Dim cards that are NOT the active target or hovered */
+.scene.dimmed {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.scene.active-spotlight {
+    z-index: 1000 !important;
 }
 
 .label {
@@ -63,15 +93,18 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    transform: translateZ(10px);
+    /* Push label slightly forward */
 }
 
 .c-w {
-    position: relative;
-    width: 480px;
-    height: 270px;
-    /* 16:9 Cinematic aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    perspective: 3000px;
+    /* Remove perspective from here, it's handled by the stage now */
 }
 
 .c-w::after {
@@ -151,20 +184,20 @@ h1 {
 }
 
 /* Click to Array Split Animation */
+/* When click to open, we stop letting the ring container spin it and lock it to reading angle */
 .c-w.active .c-container {
-    /* Stop tracking the container when open, individual cards track instead */
     transform: rotateX(0deg) rotateY(0deg) !important;
     transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* The elegant slide apart - Now with JS dynamic overrides in active state */
+/* The elegant slide apart */
 .c-w.active .c-f {
-    transform: translateX(-56%) scale(0.97) rotateX(var(--h-rx, 0deg)) rotateY(calc(12deg + var(--h-ry, 0deg)));
+    transform: translateX(-52%) scale(1) rotateX(var(--h-rx, 0deg)) rotateY(var(--h-ry, 0deg));
     box-shadow: -40px 50px 100px -20px rgba(0, 0, 0, 1);
 }
 
 .c-w.active .c-b {
-    transform: translateX(56%) scale(0.97) rotateX(var(--h-rx, 0deg)) rotateY(calc(-12deg + var(--h-ry, 0deg)));
+    transform: translateX(52%) scale(1) rotateX(var(--h-rx, 0deg)) rotateY(var(--h-ry, 0deg));
     opacity: 1;
     z-index: 2;
     box-shadow: 40px 50px 100px -20px rgba(0, 0, 0, 1);

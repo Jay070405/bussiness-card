@@ -420,114 +420,124 @@
 }
 
 /* =========================================================================
-   DESIGN 05: CYBER TERMINAL
-   Terminal OS interface, hacker aesthetic
+   DESIGN 05: MINIMAL CLAY
+   Soft light, 3D embossed geometry, pure white aesthetic
    ========================================================================= */
-.f-term {
-    background: #050505;
-    color: #0f0;
-    font-family: var(--font-mono);
-    padding: 40px;
+.f-clay {
+    background: #f0f0f3;
+    color: #444;
     display: flex;
-    flex-direction: column;
-}
-
-.term-header {
-    font-size: 12px;
-    border-bottom: 1px dashed #0f0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-.term-body {
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.b-term {
-    background: #050505;
-    color: #0f0;
-    font-family: var(--font-mono);
-    padding: 40px;
-    display: flex;
+    justify-content: center;
     align-items: center;
+    box-shadow: inset 10px 10px 20px #d1d1d5, inset -10px -10px 20px #ffffff;
 }
 
-.term-data {
-    font-size: 12px;
-    line-height: 2.5;
-}
-
-.term-lbl {
-    opacity: 0.5;
-    margin-right: 15px;
-}
-
-/* =========================================================================
-   DESIGN 06: ARCHIVE DOSSIER
-   Classified paper folder aesthetic
-   ========================================================================= */
-.f-dossier {
-    background: #dcd3b6;
-    color: #222;
-    font-family: var(--font-mono);
-    padding: 40px;
-    border: 4px solid #c0b593;
+.clay-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f0f0f3;
+    box-shadow: 15px 15px 30px #d1d1d5, -15px -15px 30px #ffffff;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -2px;
 }
 
-.doss-stamp {
-    font-size: 42px;
-    font-weight: 900;
-    color: #a12b2b;
-    transform: rotate(-15deg);
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    opacity: 0.8;
-    border: 4px solid #a12b2b;
-    padding: 5px 15px;
-}
-
-.doss-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: auto;
-    border-bottom: 2px solid #222;
-    padding-bottom: 10px;
-}
-
-.doss-id {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.b-dossier {
-    background: #dcd3b6;
-    color: #222;
-    font-family: var(--font-mono);
-    padding: 40px;
-    display: flex;
-    gap: 30px;
-    border: 4px solid #c0b593;
-}
-
-.doss-photo {
-    width: 120px;
-    height: 160px;
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #999;
-}
-
-.doss-specs {
-    flex: 1;
+.b-clay {
+    background: #f0f0f3;
+    color: #555;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
+}
+
+.clay-bar {
+    background: #f0f0f3;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #d1d1d5, -5px -5px 10px #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
     gap: 15px;
+}
+
+/* =========================================================================
+   DESIGN 06: FLUID MESH
+   Abstract mesh gradients, frosted glass typography
+   ========================================================================= */
+.f-mesh {
+    background: radial-gradient(circle at top left, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.f-mesh::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle at center, #a18cd1 0%, transparent 50%), radial-gradient(circle at bottom right, #fbc2eb 0%, transparent 50%);
+    filter: blur(60px);
+    z-index: 0;
+}
+
+.mesh-glass {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.mesh-name {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.mesh-title {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.b-mesh {
+    background: #fff;
+    color: #333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mesh-row {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.mesh-row:last-child {
+    border-bottom: none;
 }
 
 /* =========================================================================
@@ -690,171 +700,236 @@
 }
 
 /* =========================================================================
-   DESIGN 10: TYPOGRAPHIC GRID
-   Swiss design, massive grid borders
+   DESIGN 10: GEOMETRIC TOPOLOGY
+   Abstract topographic lines, elegant serif, dark mode premium
    ========================================================================= */
-.f-grid {
-    background: #fff;
-    color: #000;
-    border: 10px solid #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: end;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.f-grid div {
-    padding: 20px;
-    font-size: 54px;
-    font-weight: 900;
-    line-height: 0.8;
-    border-right: 4px solid #000;
-    border-bottom: 4px solid #000;
-}
-
-.f-grid div:nth-child(2n) {
-    border-right: none;
-}
-
-.f-grid div:nth-child(n+3) {
-    border-bottom: none;
-}
-
-.b-grid {
-    background: #fff;
-    color: #000;
-    border: 10px solid #000;
-    display: flex;
-}
-
-.grid-side {
-    width: 60px;
-    background: #000;
+.f-topo {
+    background: #111;
     color: #fff;
+    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-weight: 900;
-    font-size: 20px;
-    letter-spacing: 5px;
+    align-items: center;
 }
 
-.grid-main {
-    flex: 1;
-    padding: 40px;
+.topo-pattern {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-image: repeating-radial-gradient(circle at center, transparent 0, transparent 5px, rgba(255, 255, 255, 0.05) 6px, rgba(255, 255, 255, 0.05) 7px);
+    z-index: 0;
+}
+
+.topo-text {
+    position: relative;
+    z-index: 1;
+    font-size: 72px;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.b-topo {
+    background: #111;
+    color: #ddd;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
-    font-weight: 900;
-    font-size: 18px;
 }
 
-/* =========================================================================
-   DESIGN 11: GLITCH CRT
-   VHS aesthetic, RGB split
-   ========================================================================= */
-.f-crt {
-    background: #0a0a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.f-crt::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.5) 50%);
-    background-size: 100% 4px;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.crt-txt {
-    font-size: 72px;
-    font-weight: 900;
+.topo-info {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    margin-bottom: 10px;
     color: #fff;
-    position: relative;
-    text-shadow: 4px 0 0 rgba(255, 0, 0, 0.8), -4px 0 0 rgba(0, 255, 255, 0.8);
-    mix-blend-mode: screen;
-    font-family: var(--font-mono);
 }
 
-.b-crt {
-    background: #0a0a1a;
-    color: #0ff;
-    font-family: var(--font-mono);
-    padding: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.crt-info {
+.topo-sub {
     font-size: 14px;
-    font-weight: bold;
-    line-height: 2;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.topo-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    opacity: 0.8;
 }
 
 /* =========================================================================
-   DESIGN 12: CYANOTYPE BLUEPRINT
-   Architectural schematic style
+   DESIGN 11: SWISS POSTER
+   Bold typography, diagonal intersection, strict layout
    ========================================================================= */
-.f-blue {
-    background: #003366;
+.f-swiss {
+    background: #e32636;
     color: #fff;
-    border: 4px solid #fff;
-    padding: 40px;
-    font-family: var(--font-mono);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 40px;
+    overflow: hidden;
 }
 
-.blue-grid {
+.f-swiss::after {
+    content: '';
     position: absolute;
-    inset: 0;
-    background-image: linear-gradient(#ffffff22 1px, transparent 1px), linear-gradient(90deg, #ffffff22 1px, transparent 1px);
-    background-size: 20px 20px;
-    pointer-events: none;
+    top: -50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: #fff;
+    transform: rotate(45deg);
+    z-index: 0;
 }
 
-.blue-title {
-    font-size: 32px;
-    font-weight: bold;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
+.swiss-header {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -4px;
+    width: 60%;
+}
+
+.swiss-footer {
+    position: relative;
+    z-index: 1;
+    color: #e32636;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: -1px;
+}
+
+.b-swiss {
+    background: #fff;
+    color: #000;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.swiss-block {
+    background: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.swiss-block svg {
+    fill: #e32636;
+}
+
+/* --- SOCIAL ICONS BASE CSS --- */
+.ico {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.ico-sm {
+    width: 14px;
+    height: 14px;
+}
+
+.ico-md {
+    width: 24px;
+    height: 24px;
+}
+
+/* =========================================================================
+   DESIGN 12: OBSIDIAN GLASS
+   Deep dark luxurious glass with aura reflection gradient
+   ========================================================================= */
+.f-obs {
+    background: #050505;
+    color: #efefef;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.f-obs::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    width: 150%;
+    height: 150%;
+    background: conic-gradient(from 180deg at 50% 50%, #2a8af6 0deg, #a853ba 180deg, #e92a67 360deg);
+    filter: blur(80px);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.obs-glass {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 30px;
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.obs-title {
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.b-obs {
+    background: #050505;
+    color: #efefef;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.obs-logo {
+    font-size: 120px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    color: transparent;
+    letter-spacing: -10px;
+}
+
+.obs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
     z-index: 1;
 }
 
-.b-blue {
-    background: #003366;
-    color: #fff;
-    border: 4px solid #fff;
-    font-family: var(--font-mono);
-    padding: 40px;
+.obs-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 12px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
-.blue-row {
-    font-size: 14px;
-    display: flex;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-    padding-bottom: 10px;
-}
-
-.blue-row span {
-    width: 100px;
-    font-weight: bold;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* =========================================================================
