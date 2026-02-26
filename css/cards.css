@@ -1,0 +1,996 @@
+/* =========================================================================
+   PRO LEVEL CARD DESIGNS
+   Based on ultra-premium reference materials
+   ========================================================================= */
+
+/* --- GENERAL CARD SETUP --- */
+.card-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* =========================================================================
+   DESIGN 01: AWAKEN (CYBER / GRAPHIC DESIGN)
+   References: Layered anime composition, grid dots, huge transparency text, cyan/blue
+   ========================================================================= */
+.f-awaken {
+    background: linear-gradient(135deg, #093f75 0%, #0093bf 100%);
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Decorative grid dots on the left edge */
+.f-awaken::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 80px;
+    background-image: radial-gradient(#fff 1px, transparent 1px);
+    background-size: 8px 8px;
+    opacity: 0.3;
+}
+
+.awaken-vert-title {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 42px;
+    font-weight: 900;
+    font-family: var(--font-display);
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+
+.awaken-hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 90px;
+    font-weight: 900;
+    font-family: var(--font-display);
+    white-space: nowrap;
+    letter-spacing: 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.6;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+.awaken-top-slogan {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.awaken-bottom-bar {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 10px;
+    font-family: var(--font-ui);
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+}
+
+.awaken-box {
+    background: #fff;
+    color: #093f75;
+    padding: 2px 8px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.b-awaken {
+    background: linear-gradient(135deg, #093f75 0%, #007799 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.awaken-back-logo {
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    padding: 15px 30px;
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 6px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.awaken-card-insert {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), #a0d8ef);
+    transform: rotate(-10deg);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awaken-card-insert span {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 11px;
+    color: #093f75;
+    transform: rotate(-5deg);
+    font-weight: 600;
+}
+
+/* =========================================================================
+   DESIGN 02: METROPOLO (CORPORATE SIGNATURE)
+   References: Minimalism, off-black, gold sweeping signature, QR code, structural UI
+   ========================================================================= */
+.f-metro {
+    background: #1c1c1c;
+    /* Off-black charcoal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.metro-signature {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1;
+    color: #d4af37;
+    /* Metallic Gold */
+    /* Simulating a sweeping physical foil signature */
+    background: linear-gradient(calc(var(--angle, 45deg)), #997a00, #eed971, #fff2a8, #eed971, #997a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.metro-brand {
+    font-family: var(--font-ui);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    color: #a39571;
+    text-transform: uppercase;
+}
+
+.b-metro {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metro-name-ch {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #e8e8e8;
+    margin-bottom: 2px;
+}
+
+.metro-title-ch {
+    font-size: 10px;
+    color: #a39571;
+    letter-spacing: 1px;
+}
+
+.metro-name-en {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #e8e8e8;
+}
+
+.metro-title-en {
+    font-size: 9px;
+    color: #a39571;
+    margin-top: 2px;
+}
+
+.metro-contact {
+    margin-top: 30px;
+    font-size: 9px;
+    color: #888;
+    line-height: 1.8;
+    font-family: var(--font-ui);
+    letter-spacing: 0.5px;
+}
+
+.metro-contact span {
+    color: #e8e8e8;
+    display: inline-block;
+    width: 30px;
+}
+
+.metro-qr {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding: 4px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.metro-qr div {
+    background: #1c1c1c;
+    border-radius: 1px;
+}
+
+/* =========================================================================
+   DESIGN 03: XIUYILOU (HERITAGE FOIL)
+   References: Deep black/brown, butterfly gold logo, calligraphy, heritage layout
+   ========================================================================= */
+.f-xiu {
+    background: #0f0a08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.xiu-butterfly {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(calc(var(--angle, 45deg)), #b8860b, #ffd700, #b8860b);
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>') center / contain no-repeat;
+    mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>') center / contain no-repeat;
+}
+
+.xiu-brand {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    letter-spacing: 12px;
+    color: #e5c158;
+    text-align: center;
+}
+
+.xiu-sub {
+    font-family: var(--font-cjk);
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #b8860b;
+}
+
+.b-xiu {
+    background: #0f0a08;
+    padding: 30px;
+    color: #e5c158;
+}
+
+.xiu-top-lbl {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-cjk);
+    font-size: 10px;
+    color: #b8860b;
+}
+
+.xiu-name-line {
+    margin-top: 30px;
+    font-family: var(--font-cjk);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.xiu-name-line span {
+    font-family: var(--font-serif);
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+.xiu-rank-bar {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.xiu-blocks {
+    display: flex;
+    gap: 4px;
+}
+
+.xiu-block {
+    width: 12px;
+    height: 12px;
+    background: #e5c158;
+    box-shadow: 0 0 5px rgba(229, 193, 88, 0.5);
+}
+
+.xiu-block.dim {
+    background: #3a2b12;
+    box-shadow: none;
+}
+
+.xiu-calligraphy-bg {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: var(--font-cjk);
+    font-size: 140px;
+    font-weight: 900;
+    color: rgba(184, 134, 11, 0.05);
+    /* Extremely subtle gold watermark */
+    pointer-events: none;
+    writing-mode: vertical-rl;
+}
+
+.xiu-footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-family: var(--font-cjk);
+    font-size: 10px;
+    line-height: 1.8;
+    color: #8c7547;
+}
+
+/* =========================================================================
+   DESIGN 04: THE MONOLITH (BRUTALIST)
+   Minimal typography, giant tracking, architectural feel
+   ========================================================================= */
+.f-mono {
+    background: #e0e0e0;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mono-txt {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+
+.mono-sub {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    margin-top: -10px;
+}
+
+.b-mono {
+    background: #111;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.mono-info {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.mono-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+}
+
+/* =========================================================================
+   DESIGN 05: CYBER TERMINAL
+   Terminal OS interface, hacker aesthetic
+   ========================================================================= */
+.f-term {
+    background: #050505;
+    color: #0f0;
+    font-family: var(--font-mono);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.term-header {
+    font-size: 12px;
+    border-bottom: 1px dashed #0f0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.term-body {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.b-term {
+    background: #050505;
+    color: #0f0;
+    font-family: var(--font-mono);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.term-data {
+    font-size: 12px;
+    line-height: 2.5;
+}
+
+.term-lbl {
+    opacity: 0.5;
+    margin-right: 15px;
+}
+
+/* =========================================================================
+   DESIGN 06: ARCHIVE DOSSIER
+   Classified paper folder aesthetic
+   ========================================================================= */
+.f-dossier {
+    background: #dcd3b6;
+    color: #222;
+    font-family: var(--font-mono);
+    padding: 40px;
+    border: 4px solid #c0b593;
+    display: flex;
+    flex-direction: column;
+}
+
+.doss-stamp {
+    font-size: 42px;
+    font-weight: 900;
+    color: #a12b2b;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0.8;
+    border: 4px solid #a12b2b;
+    padding: 5px 15px;
+}
+
+.doss-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: auto;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+.doss-id {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.b-dossier {
+    background: #dcd3b6;
+    color: #222;
+    font-family: var(--font-mono);
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+    border: 4px solid #c0b593;
+}
+
+.doss-photo {
+    width: 120px;
+    height: 160px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #999;
+}
+
+.doss-specs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* =========================================================================
+   DESIGN 07: NEON ACRYLIC
+   Translucent, blurred, glowing neon text
+   ========================================================================= */
+.f-neon {
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 255, 150, 0.3);
+    color: #00ff96;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.neon-ring {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 20px solid rgba(0, 255, 150, 0.1);
+    filter: blur(10px);
+}
+
+.neon-txt {
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    text-shadow: 0 0 40px rgba(0, 255, 150, 0.5);
+    z-index: 1;
+}
+
+.b-neon {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 255, 150, 0.3);
+    color: #00ff96;
+    font-family: var(--font-mono);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.neon-r {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 255, 150, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
+}
+
+.neon-row {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.neon-row span {
+    width: 60px;
+    opacity: 0.5;
+}
+
+/* =========================================================================
+   DESIGN 08: BRUSHED TITANIUM
+   Silver metallic sheen, blind deboss
+   ========================================================================= */
+.f-titan {
+    background: linear-gradient(135deg, #bbb, #e6e6e6, #bbb);
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titan-emboss {
+    font-size: 54px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.b-titan {
+    background: #d4d4d4;
+    color: #444;
+    display: flex;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.titan-left {
+    width: 40%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.titan-right {
+    flex: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font-mono);
+}
+
+/* =========================================================================
+   DESIGN 09: CARBON WEAVE
+   Deep physical texture, minimal contrast
+   ========================================================================= */
+.f-carb {
+    background: #111;
+    background-image: linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a), linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carb-logo {
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: -8px;
+    text-shadow: -1px -1px 0 #000, 1px 1px 0 #222;
+}
+
+.b-carb {
+    background: #111;
+    color: #888;
+    font-family: var(--font-mono);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carb-row {
+    font-size: 12px;
+    display: flex;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+.carb-row span {
+    width: 80px;
+    color: #555;
+}
+
+/* =========================================================================
+   DESIGN 10: TYPOGRAPHIC GRID
+   Swiss design, massive grid borders
+   ========================================================================= */
+.f-grid {
+    background: #fff;
+    color: #000;
+    border: 10px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: end;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.f-grid div {
+    padding: 20px;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 0.8;
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+
+.f-grid div:nth-child(2n) {
+    border-right: none;
+}
+
+.f-grid div:nth-child(n+3) {
+    border-bottom: none;
+}
+
+.b-grid {
+    background: #fff;
+    color: #000;
+    border: 10px solid #000;
+    display: flex;
+}
+
+.grid-side {
+    width: 60px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.grid-main {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* =========================================================================
+   DESIGN 11: GLITCH CRT
+   VHS aesthetic, RGB split
+   ========================================================================= */
+.f-crt {
+    background: #0a0a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.f-crt::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.5) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.crt-txt {
+    font-size: 72px;
+    font-weight: 900;
+    color: #fff;
+    position: relative;
+    text-shadow: 4px 0 0 rgba(255, 0, 0, 0.8), -4px 0 0 rgba(0, 255, 255, 0.8);
+    mix-blend-mode: screen;
+    font-family: var(--font-mono);
+}
+
+.b-crt {
+    background: #0a0a1a;
+    color: #0ff;
+    font-family: var(--font-mono);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.crt-info {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* =========================================================================
+   DESIGN 12: CYANOTYPE BLUEPRINT
+   Architectural schematic style
+   ========================================================================= */
+.f-blue {
+    background: #003366;
+    color: #fff;
+    border: 4px solid #fff;
+    padding: 40px;
+    font-family: var(--font-mono);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue-grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(#ffffff22 1px, transparent 1px), linear-gradient(90deg, #ffffff22 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+.blue-title {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.b-blue {
+    background: #003366;
+    color: #fff;
+    border: 4px solid #fff;
+    font-family: var(--font-mono);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blue-row {
+    font-size: 14px;
+    display: flex;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.blue-row span {
+    width: 100px;
+    font-weight: bold;
+}
+
+/* =========================================================================
+   DESIGN 13: FROSTED POLYCARBONATE
+   Clean, white glassmorphism
+   ========================================================================= */
+.f-frost {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #111;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
+}
+
+.frost-txt {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -2px;
+}
+
+.b-frost {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.frost-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================================================
+   DESIGN 14: IRIDESCENT PEARL
+   Elegant minimal gradient foil
+   ========================================================================= */
+.f-pearl {
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pearl-txt {
+    font-family: var(--font-serif);
+    font-size: 80px;
+    font-weight: 400;
+    font-style: italic;
+    background-image: linear-gradient(calc(var(--angle, 45deg)), #ffb6c1, #add8e6, #fffacd, #e6e6fa, #ffb6c1);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-right: 20px;
+}
+
+/* padding for italic clip bug */
+.b-pearl {
+    background: #fdfdfd;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #444;
+}
+
+.pearl-lbl {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.pearl-contact {
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 600;
+    font-family: var(--font-ui);
+    letter-spacing: 1px;
+}
+
+/* =========================================================================
+   DESIGN 15: VANTABLACK (VOID)
+   Pure light absorption, revealed by mouse tracking gloss
+   ========================================================================= */
+.f-void {
+    background: #000;
+}
+
+.void-txt {
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -6px;
+    background-image: radial-gradient(circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)), rgba(255, 255, 255, 0.8) 0%, transparent 25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-color: #050505;
+}
+
+.b-void {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.void-reveal {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-image: radial-gradient(circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)), rgba(255, 255, 255, 1) 0%, transparent 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-color: #080808;
+    text-transform: uppercase;
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Pro Level Portfolio Cards</title>
+    <!-- Core 3D Engine -->
+    <link rel="stylesheet" href="css/engine.css">
+    <!-- Pro Card Designs -->
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+
+<body>
+    <h1>15 Elite Conceptual Designs</h1>
+
+    <div id="c-cont"></div>
+
+    <script>
+        const p = {
+            n: 'Jay Lin',
+            r: 'Entertainment / Concept Designer',
+            e: 'hello@jaylin.art',
+            v: '+1 234 567 8900',
+            w: 'jaylin.art',
+            l: '/in/jaylin'
+        };
+
+        const cards = [
+            {
+                l: '01. AWAKEN (CYBER ANIME)', cls: 'glass',
+                f: `<div class="f-awaken c-f c">
+                    <div class="awaken-vert-title">J. Lin</div>
+                    <div class="awaken-top-slogan">Concept Art & Design</div>
+                    <div class="awaken-hero-text">A w a k e n</div>
+                    <div class="awaken-bottom-bar">ENTERTAINMENT DESIGN <span class="awaken-box">ARTIST</span> V.01</div>
+                    <div class="gloss" style="mix-blend-mode:overlay; opacity:0.3;"></div>
+                </div>`,
+                b: `<div class="b-awaken c-b c">
+                    <div class="awaken-back-logo">JAY LIN . ART</div>
+                    <div class="awaken-card-insert">
+                        <span>Concept<br>Designer</span>
+                    </div>
+                </div>`
+            },
+            {
+                l: '02. METROPOLO (EXECUTIVE GOLD)', cls: 'matte',
+                f: `<div class="f-metro c-f c">
+                    <div class="metro-signature">Jay Lin</div>
+                    <div class="metro-brand">CONCEPT DESIGNER</div>
+                    <div class="gloss" style="mix-blend-mode:color-dodge; opacity:0.1;"></div>
+                </div>`,
+                b: `<div class="b-metro c-b c">
+                    <div class="metro-name-ch">林 杰</div>
+                    <div class="metro-title-ch">概念设计师</div>
+                    <div class="metro-name-en">${p.n}</div>
+                    <div class="metro-title-en">${p.r}</div>
+                    
+                    <div class="metro-contact">
+                        <span>Phone:</span> ${p.v}<br>
+                        <span>Email:</span> ${p.e}<br>
+                        <span>Web:</span> ${p.w}
+                    </div>
+                    
+                    <div class="metro-qr">
+                        <div></div><div></div><div></div>
+                        <div></div><div style="background:transparent;"></div><div></div>
+                        <div></div><div></div><div></div>
+                    </div>
+                </div>`
+            },
+            {
+                l: '03. XIUYILOU (HERITAGE FOIL)', cls: 'holo',
+                f: `<div class="f-xiu c-f c">
+                    <div class="xiu-butterfly"></div>
+                    <div class="xiu-brand">J A Y   L I N</div>
+                    <div class="xiu-sub">概 | 念 | 设 | 计</div>
+                    <div class="gloss" style="opacity:0.2;"></div>
+                </div>`,
+                b: `<div class="b-xiu c-b c">
+                    <div class="xiu-top-lbl">
+                        <span>概 | 念 | 设 | 计</span>
+                        <span>艺 | 术</span>
+                    </div>
+                    
+                    <div class="xiu-name-line">
+                        林 杰 <span>| JAY LIN</span>
+                    </div>
+                    
+                    <div class="xiu-rank-bar">
+                        <span style="font-family:var(--font-cjk); font-size:10px;">承接：角色 / 场景 / 概念</span>
+                        <div class="xiu-blocks">
+                            <div class="xiu-block"></div><div class="xiu-block"></div>
+                        </div>
+                        <span style="color:#3a2b12;">/</span>
+                        <div class="xiu-blocks">
+                            <div class="xiu-block"></div><div class="xiu-block"></div><div class="xiu-block dim"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="xiu-footer">
+                        Email: ${p.e}<br>
+                        Web: ${p.w}
+                    </div>
+                    
+                    <div class="xiu-calligraphy-bg">
+                        概<br>念<br>艺<br>术
+                    </div>
+                </div>`
+            },
+            {
+                l: '04. THE MONOLITH (BRUTALIST)', cls: 'matte',
+                f: `<div class="f-mono c-f c">
+                    <div class="mono-txt">JAY LIN</div>
+                    <div class="mono-sub">CONCEPT ARTIST</div>
+                </div>`,
+                b: `<div class="b-mono c-b c">
+                    <div class="mono-info">
+                        <div>${p.n}</div>
+                        <div>${p.r}</div>
+                    </div>
+                    <div class="mono-grid">
+                        <div>${p.e}</div>
+                        <div>${p.w}</div>
+                        <div>${p.v}</div>
+                        <div>${p.l}</div>
+                    </div>
+                </div>`
+            },
+            {
+                l: '05. CYBER TERMINAL (HACKER)', cls: 'glass',
+                f: `<div class="f-term c-f c">
+                    <div class="term-header">/USER: JAY LIN</div>
+                    <div class="term-body">> INITIALIZING CONCEPT ENGINE...<br>> STATUS: ONLINE<br>_</div>
+                </div>`,
+                b: `<div class="b-term c-b c">
+                    <div class="term-data">
+                        <span class="term-lbl">ROLE</span> ${p.r}<br>
+                        <span class="term-lbl">MAIL</span> ${p.e}<br>
+                        <span class="term-lbl">COMM</span> ${p.v}<br>
+                        <span class="term-lbl">LNK</span> ${p.w}
+                    </div>
+                </div>`
+            },
+            {
+                l: '06. ARCHIVE DOSSIER (CLASSIFIED)', cls: 'matte',
+                f: `<div class="f-dossier c-f c">
+                    <div class="doss-stamp">TOP SECRET</div>
+                    <div class="doss-title">SUBJECT: JAY LIN</div>
+                    <div class="doss-id">ID: 006-ART</div>
+                </div>`,
+                b: `<div class="b-dossier c-b c">
+                    <div class="doss-photo"></div>
+                    <div class="doss-specs">
+                        <div>NAME: ${p.n}</div>
+                        <div>SPECIALTY: ${p.r}</div>
+                        <div>CONTACT: ${p.e}</div>
+                        <div>LOC: ${p.w}</div>
+                    </div>
+                </div>`
+            },
+            {
+                l: '07. NEON ACRYLIC', cls: 'glass',
+                f: `<div class="f-neon c-f c">
+                    <div class="neon-ring"></div>
+                    <div class="neon-txt">J L</div>
+                </div>`,
+                b: `<div class="b-neon c-b c">
+                    <div class="neon-r">${p.r}</div>
+                    <div class="neon-row"><span>EML</span> ${p.e}</div>
+                    <div class="neon-row"><span>WEB</span> ${p.w}</div>
+                </div>`
+            },
+            {
+                l: '08. BRUSHED TITANIUM', cls: 'brush',
+                f: `<div class="f-titan c-f c">
+                    <div class="titan-emboss">JAY LIN</div>
+                </div>`,
+                b: `<div class="b-titan c-b c">
+                    <div class="titan-left">${p.n}</div>
+                    <div class="titan-right">
+                        <div>${p.r}</div>
+                        <div>${p.e}</div>
+                        <div>${p.w}</div>
+                    </div>
+                </div>`
+            },
+            {
+                l: '09. CARBON WEAVE', cls: 'matte',
+                f: `<div class="f-carb c-f c">
+                    <div class="carb-logo">JL</div>
+                </div>`,
+                b: `<div class="b-carb c-b c">
+                    <div class="carb-row"><span>NAME</span> ${p.n}</div>
+                    <div class="carb-row"><span>ROLE</span> ${p.r}</div>
+                    <div class="carb-row"><span>MAIL</span> ${p.e}</div>
+                    <div class="carb-row"><span>SITE</span> ${p.w}</div>
+                </div>`
+            },
+            {
+                l: '10. TYPOGRAPHIC GRID', cls: 'matte',
+                f: `<div class="f-grid c-f c">
+                    <div>JAY</div><div>LIN</div>
+                    <div>ART</div><div>DIR</div>
+                </div>`,
+                b: `<div class="b-grid c-b c">
+                    <div class="grid-side">INFO</div>
+                    <div class="grid-main">
+                        <div>${p.r}</div>
+                        <div>${p.e}</div>
+                        <div>${p.w}</div>
+                    </div>
+                </div>`
+            },
+            {
+                l: '11. GLITCH CRT', cls: 'glass',
+                f: `<div class="f-crt c-f c">
+                    <div class="crt-txt" data-text="JAY LIN">JAY LIN</div>
+                </div>`,
+                b: `<div class="b-crt c-b c">
+                    <div class="crt-info">
+                        ERROR 404: ARTIST FOUND<br>
+                        ${p.r}<br>
+                        ${p.e}<br>
+                        ${p.w}
+                    </div>
+                </div>`
+            },
+            {
+                l: '12. CYANOTYPE BLUEPRINT', cls: 'matte',
+                f: `<div class="f-blue c-f c">
+                    <div class="blue-grid"></div>
+                    <div class="blue-title">DESIGN_SCHEMATIC: JL</div>
+                </div>`,
+                b: `<div class="b-blue c-b c">
+                    <div class="blue-row"><span>SPECS</span> ${p.r}</div>
+                    <div class="blue-row"><span>COMMS</span> ${p.e}</div>
+                    <div class="blue-row"><span>NODE</span> ${p.w}</div>
+                </div>`
+            },
+            {
+                l: '13. FROSTED POLYCARBONATE', cls: 'glass',
+                f: `<div class="f-frost c-f c">
+                    <div class="frost-txt">Jay Lin</div>
+                </div>`,
+                b: `<div class="b-frost c-b c">
+                    <div class="frost-box">${p.r}</div>
+                    <div class="frost-box">${p.e}</div>
+                    <div class="frost-box">${p.w}</div>
+                </div>`
+            },
+            {
+                l: '14. IRIDESCENT PEARL', cls: 'holo',
+                f: `<div class="f-pearl c-f c">
+                    <div class="pearl-txt">J.L</div>
+                </div>`,
+                b: `<div class="b-pearl c-b c">
+                    <div class="pearl-lbl">Concept Designer</div>
+                    <div class="pearl-contact">${p.e}<br>${p.w}</div>
+                </div>`
+            },
+            {
+                l: '15. VANTABLACK (VOID)', cls: 'matte',
+                f: `<div class="f-void c-f c">
+                    <div class="void-txt">JAY LIN</div>
+                </div>`,
+                b: `<div class="b-void c-b c">
+                    <div class="void-reveal">${p.r}<br><br>${p.e}<br>${p.w}</div>
+                </div>`
+            }
+        ];
+
+        const cCont = document.getElementById('c-cont');
+
+        cards.forEach(d => {
+            let html = `
+            <div class="scene">
+                <div class="label">
+                    <span>${d.l}</span>
+                    <span style="opacity:0.3">[${d.cls.toUpperCase()}]</span>
+                </div>
+                <div class="c-w ${d.cls}">
+                    <div class="c-container">
+                        ${d.f}
+                        ${d.b}
+                    </div>
+                </div>
+            </div>`;
+            cCont.innerHTML += html;
+        });
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

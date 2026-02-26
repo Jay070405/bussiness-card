@@ -1,0 +1,196 @@
+/* =========================================================================
+   3D CARD INTERACTION ENGINE
+   Handles spatial tracking, splitting, lighting, and ambient environment
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Noto+Serif+SC:wght@400;700;900&family=Oswald:wght@300;500;700&display=swap');
+
+:root {
+    --font-ui: 'Inter', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-serif: 'Playfair Display', serif;
+    --font-cjk: 'Noto Serif SC', serif;
+    --font-display: 'Oswald', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: var(--font-ui);
+    margin: 0;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+    align-items: center;
+    overflow-x: hidden;
+    /* Ambient Dark Room Grid */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 100px 100px;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-weight: 200;
+    letter-spacing: 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+/* ================= 3D INTERACTION CORE ================= */
+.scene {
+    position: relative;
+    z-index: 10;
+}
+
+.scene:hover {
+    z-index: 100;
+}
+
+.label {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.c-w {
+    position: relative;
+    width: 480px;
+    height: 270px;
+    /* 16:9 Cinematic aspect ratio */
+    cursor: pointer;
+    perspective: 3000px;
+}
+
+.c-w::after {
+    content: '◎ CLICK TO INTERACT';
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: #555;
+    letter-spacing: 6px;
+    font-family: var(--font-mono);
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.c-w:hover::after {
+    opacity: 1;
+    bottom: -40px;
+}
+
+.c-w.active::after {
+    content: '⊗ CLOSE INTERFACE';
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.c-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.c-container.reset {
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform: rotateX(0) rotateY(0);
+}
+
+.c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    /* Sharper feeling */
+    overflow: hidden;
+    transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.c-f {
+    z-index: 2;
+    transform: translateX(0) scale(1) translateZ(1px);
+}
+
+.c-b {
+    z-index: 1;
+    transform: scale(0.92);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hover BEFORE clicking: The "Pop" effect */
+.c-w:not(.active):hover .c-f {
+    transform: translateY(-20px) scale(1.04);
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 1), 0 20px 40px rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.c-w:not(.active):hover .c-b {
+    transform: translateY(-10px) scale(0.95);
+}
+
+/* Click to Array Split Animation */
+.c-w.active .c-container {
+    /* Stop tracking the container when open, individual cards track instead */
+    transform: rotateX(0deg) rotateY(0deg) !important;
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* The elegant slide apart - Now with JS dynamic overrides in active state */
+.c-w.active .c-f {
+    transform: translateX(-56%) scale(0.97) rotateX(var(--h-rx, 0deg)) rotateY(calc(12deg + var(--h-ry, 0deg)));
+    box-shadow: -40px 50px 100px -20px rgba(0, 0, 0, 1);
+}
+
+.c-w.active .c-b {
+    transform: translateX(56%) scale(0.97) rotateX(var(--h-rx, 0deg)) rotateY(calc(-12deg + var(--h-ry, 0deg)));
+    opacity: 1;
+    z-index: 2;
+    box-shadow: 40px 50px 100px -20px rgba(0, 0, 0, 1);
+    pointer-events: auto;
+}
+
+/* Hover slightly while open */
+.c-w.active:hover .c-f {
+    box-shadow: -50px 60px 120px -20px rgba(0, 0, 0, 1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.c-w.active:hover .c-b {
+    box-shadow: 50px 60px 120px -20px rgba(0, 0, 0, 1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Material Gloss Overlay */
+.gloss {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.c-w:hover .gloss {
+    opacity: 1 !important;
+}
