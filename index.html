@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>15 Pro Level Portfolio Cards</title>
     <!-- Core 3D Engine -->
-    <link rel="stylesheet" href="css/engine.css">
+    <link rel="stylesheet" href="css/engine.css" />
     <!-- Pro Card Designs -->
-    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/cards.css" />
 </head>
 
 <body>
@@ -18,12 +18,12 @@
 
     <script>
         const p = {
-            n: 'Jay Lin',
-            r: 'Entertainment / Concept Designer',
-            e: 'hello@jaylin.art',
-            v: '+1 234 567 8900',
-            w: 'jaylin.art',
-            l: '/in/jaylin'
+            n: "Jay Lin",
+            r: "Entertainment / Concept Designer",
+            e: "hello@jaylin.art",
+            v: "+1 234 567 8900",
+            w: "jaylin.art",
+            l: "/in/jaylin",
         };
 
         const icoW = `<svg class="ico" viewBox="0 0 24 24"><path d="M8.5 14.5c-2.5 0-4.5-1.7-4.5-3.8 0-2.1 2-3.8 4.5-3.8s4.5 1.7 4.5 3.8c0 2.1-2 3.8-4.5 3.8zm0-6.6c-1.8 0-3.2 1.2-3.2 2.7 0 1.5 1.4 2.7 3.2 2.7 1.8 0 3.2-1.2 3.2-2.7 0-1.5-1.4-2.7-3.2-2.7zm8.5 10c-2.1 0-3.8-1.4-3.8-3.1 0-1.7 1.7-3.1 3.8-3.1 2.1 0 3.8 1.4 3.8 3.1 0 1.7-1.7 3.1-3.8 3.1zm0-5.3c-1.4 0-2.5 1-2.5 2.2 0 1.2 1.1 2.2 2.5 2.2 1.4 0 2.5-1 2.5-2.2 0-1.2-1.1-2.2-2.5-2.2z"/></svg>`;
@@ -32,7 +32,8 @@
 
         const cards = [
             {
-                l: '01. AWAKEN (CYBER ANIME)', cls: 'glass',
+                l: "01. AWAKEN (CYBER ANIME)",
+                cls: "glass",
                 f: `<div class="f-awaken c-f c">
                     <div class="awaken-vert-title">J. Lin</div>
                     <div class="awaken-top-slogan">Concept Art & Design</div>
@@ -45,75 +46,62 @@
                     <div class="awaken-card-insert">
                         <span>Concept<br>Designer</span>
                     </div>
-                </div>`
+                </div>`,
             },
             {
-                l: '02. METROPOLO (EXECUTIVE GOLD)', cls: 'matte',
-                f: `<div class="f-metro c-f c">
-                    <div class="metro-signature">Jay Lin</div>
-                    <div class="metro-brand">CONCEPT DESIGNER</div>
-                    <div class="gloss" style="mix-blend-mode:color-dodge; opacity:0.1;"></div>
-                </div>`,
-                b: `<div class="b-metro c-b c">
-                    <div class="metro-name-ch">林 杰</div>
-                    <div class="metro-title-ch">概念设计师</div>
-                    <div class="metro-name-en">${p.n}</div>
-                    <div class="metro-title-en">${p.r}</div>
-                    
-                    <div class="metro-contact">
-                        <span>Phone:</span> ${p.v}<br>
-                        <span>Email:</span> ${p.e}<br>
-                        <span>Web:</span> ${p.w}
-                    </div>
-                    
-                    <div class="metro-qr">
-                        <div></div><div></div><div></div>
-                        <div></div><div style="background:transparent;"></div><div></div>
-                        <div></div><div></div><div></div>
-                    </div>
-                </div>`
-            },
-            {
-                l: '03. XIUYILOU (HERITAGE FOIL)', cls: 'holo',
-                f: `<div class="f-xiu c-f c">
-                    <div class="xiu-butterfly"></div>
-                    <div class="xiu-brand">J A Y   L I N</div>
-                    <div class="xiu-sub">概 | 念 | 设 | 计</div>
-                    <div class="gloss" style="opacity:0.2;"></div>
-                </div>`,
-                b: `<div class="b-xiu c-b c">
-                    <div class="xiu-top-lbl">
-                        <span>概 | 念 | 设 | 计</span>
-                        <span>艺 | 术</span>
-                    </div>
-                    
-                    <div class="xiu-name-line">
-                        林 杰 <span>| JAY LIN</span>
-                    </div>
-                    
-                    <div class="xiu-rank-bar">
-                        <span style="font-family:var(--font-cjk); font-size:10px;">承接：角色 / 场景 / 概念</span>
-                        <div class="xiu-blocks">
-                            <div class="xiu-block"></div><div class="xiu-block"></div>
+                l: "02. HOLOGRAPHIC CUTOUT",
+                cls: "holo",
+                f: `<div class="f-holo c-f c">
+                    <div class="holo-base">
+                        <div class="holo-cutout">
+                            <div class="holo-inner"></div>
                         </div>
-                        <span style="color:#3a2b12;">/</span>
-                        <div class="xiu-blocks">
-                            <div class="xiu-block"></div><div class="xiu-block"></div><div class="xiu-block dim"></div>
+                        <div class="holo-logotype">
+                            <div class="holo-logo-text">J. LIN DESIGN</div>
+                            <div class="holo-logo-sub">CONCEPTUAL ART & WORLD BUILDING</div>
                         </div>
                     </div>
-                    
-                    <div class="xiu-footer">
-                        Email: ${p.e}<br>
-                        Web: ${p.w}
+                </div>`,
+                b: `<div class="b-holo c-b c">
+                    <div class="holo-b-wrap">
+                        <div class="holo-cutout small">
+                            <div class="holo-inner"></div>
+                        </div>
+                        <div class="holo-contact">
+                            <div style="font-size:16px; font-weight:700; color:#fff;">${p.n}</div>
+                            <div style="font-size:9px; color:#aaa; letter-spacing:2px; margin-bottom:20px;">${p.r}</div>
+                            <div class="holo-row"><span>MAIL</span>${p.e}</div>
+                            <div class="holo-row"><span>SITE</span>${p.w}</div>
+                        </div>
                     </div>
-                    
-                    <div class="xiu-calligraphy-bg">
-                        概<br>念<br>艺<br>术
-                    </div>
-                </div>`
+                </div>`,
             },
             {
-                l: '04. THE MONOLITH (BRUTALIST)', cls: 'matte',
+                l: "03. BOTANICAL SILHOUETTE",
+                cls: "matte",
+                f: `<div class="f-botanic c-f c">
+                    <div class="bot-frame">
+                        <div class="bot-title-vert">J. LIN</div>
+                        <div class="bot-title-horiz">CONCEPT DESIGN</div>
+                        <div class="bot-deco-dot"></div>
+                        <div class="bot-deco-line"></div>
+                        <img src="assets/anime_profile_3.png" style="width: 120%; height: 100%; object-fit: cover; object-position: center 25%; mix-blend-mode: darken; position: absolute; left: 0; bottom: 0; z-index: 1; opacity: 0.4;">
+                    </div>
+                </div>`,
+                b: `<div class="b-botanic c-b c">
+                    <div class="bot-b-wrap">
+                        <div class="bot-b-title">${p.n}</div>
+                        <div class="bot-b-sub">${p.r}</div>
+                        <div class="bot-b-contact">
+                            <div>${p.e}</div>
+                            <div>${p.w}</div>
+                        </div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "04. THE MONOLITH (BRUTALIST)",
+                cls: "matte",
                 f: `<div class="f-mono c-f c">
                     <div class="mono-txt">JAY LIN</div>
                     <div class="mono-sub">CONCEPT ARTIST</div>
@@ -129,10 +117,11 @@
                         <div>${p.v}</div>
                         <div>${p.l}</div>
                     </div>
-                </div>`
+                </div>`,
             },
             {
-                l: '05. MINIMAL CLAY', cls: 'matte',
+                l: "05. MINIMAL CLAY",
+                cls: "matte",
                 f: `<div class="f-clay c-f c">
                     <div class="clay-circle">JL</div>
                 </div>`,
@@ -144,25 +133,38 @@
                     <div class="clay-bar">${icoW} ${p.v}</div>
                     <div class="clay-bar">${icoG} ${p.w}</div>
                     <div class="clay-bar">${icoL} ${p.l}</div>
-                </div>`
+                </div>`,
             },
             {
-                l: '06. ABSTRACT MESH', cls: 'glass',
-                f: `<div class="f-mesh c-f c">
-                    <div class="mesh-glass">
-                        <div class="mesh-name">Jay Lin</div>
-                        <div class="mesh-title">Concept Art Director</div>
+                l: "06. ARTBOOK COVER",
+                cls: "matte",
+                f: `<div class="f-artbook c-f c">
+                    <div class="art-backplate"></div>
+                    <div class="art-vert-line"></div>
+                    <div class="art-flow-lines"></div>
+                    <div class="art-flow-lines alt"></div>
+                    <div class="art-title-group">
+                        <div class="art-name">JAY LIN</div>
+                        <div class="art-sub">CONCEPT ARTWORKS</div>
                     </div>
                 </div>`,
-                b: `<div class="b-mesh c-b c">
-                    <div class="mesh-row" style="opacity:0.5;">CONTACT LOG_01</div>
-                    <div class="mesh-row">${icoW} Wechat: ${p.v}</div>
-                    <div class="mesh-row">${icoG} Web: ${p.w}</div>
-                    <div class="mesh-row">${icoL} Linking: ${p.l}</div>
-                </div>`
+                b: `<div class="b-artbook c-b c">
+                    <div class="art-b-header">
+                        <span>FIRST EDITION</span>
+                        <div class="art-b-dot"></div>
+                    </div>
+                    <div class="art-b-content">
+                        <div style="font-size:24px; font-weight:800; letter-spacing:-1px;">J.LIN</div>
+                        <div style="font-size:10px; color:#666; font-family:var(--font-mono); margin-bottom:20px;">[ ${p.r} ]</div>
+                        <div class="art-b-row">P / ${p.e}</div>
+                        <div class="art-b-row">W / ${p.w}</div>
+                    </div>
+                    <div class="art-barcode"></div>
+                </div>`,
             },
             {
-                l: '07. NEON ACRYLIC', cls: 'glass',
+                l: "07. NEON ACRYLIC",
+                cls: "glass",
                 f: `<div class="f-neon c-f c">
                     <div class="neon-ring"></div>
                     <div class="neon-txt">J L</div>
@@ -171,10 +173,11 @@
                     <div class="neon-r">${p.r}</div>
                     <div class="neon-row"><span>EML</span> ${p.e}</div>
                     <div class="neon-row"><span>WEB</span> ${p.w}</div>
-                </div>`
+                </div>`,
             },
             {
-                l: '08. BRUSHED TITANIUM', cls: 'brush',
+                l: "08. BRUSHED TITANIUM",
+                cls: "brush",
                 f: `<div class="f-titan c-f c">
                     <div class="titan-emboss">JAY LIN</div>
                 </div>`,
@@ -185,10 +188,11 @@
                         <div>${p.e}</div>
                         <div>${p.w}</div>
                     </div>
-                </div>`
+                </div>`,
             },
             {
-                l: '09. CARBON WEAVE', cls: 'matte',
+                l: "09. CARBON WEAVE",
+                cls: "matte",
                 f: `<div class="f-carb c-f c">
                     <div class="carb-logo">JL</div>
                 </div>`,
@@ -197,10 +201,11 @@
                     <div class="carb-row"><span>ROLE</span> ${p.r}</div>
                     <div class="carb-row"><span>MAIL</span> ${p.e}</div>
                     <div class="carb-row"><span>SITE</span> ${p.w}</div>
-                </div>`
+                </div>`,
             },
             {
-                l: '10. GEOMETRIC TOPOLOGY', cls: 'matte',
+                l: "10. GEOMETRIC TOPOLOGY",
+                cls: "matte",
                 f: `<div class="f-topo c-f c">
                     <div class="topo-pattern"></div>
                     <div class="topo-text">JL</div>
@@ -211,71 +216,207 @@
                     <div class="topo-row">${icoW} ${p.v}</div>
                     <div class="topo-row">${icoG} ${p.w}</div>
                     <div class="topo-row">${icoL} ${p.l}</div>
-                </div>`
-            },
-            {
-                l: '11. SWISS POSTER', cls: 'matte',
-                f: `<div class="f-swiss c-f c">
-                    <div class="swiss-header">JAY LIN</div>
-                    <div class="swiss-footer">DESIGN<br>SYSTEM</div>
                 </div>`,
-                b: `<div class="b-swiss c-b c">
-                    <div class="swiss-block">${icoW} ${p.v}</div>
-                    <div class="swiss-block">${icoG} ${p.w}</div>
-                    <div class="swiss-block">${icoL} ${p.l}</div>
-                </div>`
             },
             {
-                l: '12. OBSIDIAN GLASS', cls: 'glass',
-                f: `<div class="f-obs c-f c">
-                    <div class="obs-glass">
-                        <div class="obs-title">Jay Lin</div>
+                l: "11. EXHIBITION TICKET",
+                cls: "matte",
+                f: `<div class="f-ticket c-f c">
+                    <div class="ticket-slash"></div>
+                    <h1 class="ticket-huge">JAY</h1>
+                    <div class="ticket-info">SOLO EXHIBITION / CONCEPT ART</div>
+                </div>`,
+                b: `<div class="b-ticket c-b c">
+                    <div class="ticket-stub-line"></div>
+                    <div class="ticket-b-wrap">
+                        <div class="ticket-b-head">
+                            <span style="font-size:16px; font-weight:800;">JAY LIN</span>
+                            <span style="font-size:10px; color:#e32636;">AUTHOR</span>
+                        </div>
+                        <div style="font-size:10px; line-height:1.6; color:#555;">
+                            ADM: 1<br>
+                            SEC: VIP<br>
+                            <br>
+                            E: ${p.e}<br>
+                            W: ${p.w}
+                        </div>
+                        <div class="ticket-b-footer">${p.v}</div>
                     </div>
                 </div>`,
-                b: `<div class="b-obs c-b c">
-                    <div class="obs-list">
-                        <div class="obs-item">${icoW} ${p.v}</div>
-                        <div class="obs-item">${icoG} ${p.w}</div>
-                        <div class="obs-item">${icoL} ${p.l}</div>
+            },
+            {
+                l: "12. DARK MATTER NEXUS",
+                cls: "glass",
+                f: `<div class="f-dark-nexus c-f c">
+                    <div class="nexus-core">
+                        <div class="nexus-title">J L</div>
                     </div>
-                    <div class="obs-logo">JL</div>
-                </div>`
-            },
-            {
-                l: '13. FROSTED POLYCARBONATE', cls: 'glass',
-                f: `<div class="f-frost c-f c">
-                    <div class="frost-txt">Jay Lin</div>
                 </div>`,
-                b: `<div class="b-frost c-b c">
-                    <div class="frost-box">${p.r}</div>
-                    <div class="frost-box">${p.e}</div>
-                    <div class="frost-box">${p.w}</div>
-                </div>`
+                b: `<div class="b-dark-nexus c-b c">
+                    <div style="font-size:24px; font-weight:900; color:#c7d2fe; letter-spacing: 2px;">JAY LIN</div>
+                    <div style="font-size:10px; color:#818cf8; margin-bottom:15px; font-family:var(--font-mono); letter-spacing:3px;">[ CONCEPT ARTIST ]</div>
+                    <div class="nexus-item" style="border-bottom: 1px solid rgba(79, 70, 229, 0.2); padding-bottom: 10px;">
+                        <span style="font-size: 8px; color:#4f46e5;">ID.1</span> ${icoW} ${p.v}
+                    </div>
+                    <div class="nexus-item" style="border-bottom: 1px solid rgba(79, 70, 229, 0.2); padding-bottom: 10px; margin-top: 10px;">
+                        <span style="font-size: 8px; color:#4f46e5;">ID.2</span> ${icoG} ${p.w}
+                    </div>
+                    <div class="nexus-item" style="margin-top: 10px;">
+                        <span style="font-size: 8px; color:#4f46e5;">ID.3</span> ${icoL} ${p.l}
+                    </div>
+                </div>`,
             },
             {
-                l: '14. IRIDESCENT PEARL', cls: 'holo',
+                l: "13. ASTRAL PROJECTION",
+                cls: "glass",
+                f: `<div class="f-astral c-f c">
+                    <div class="astral-ring"></div>
+                    <div class="astral-txt">Jay Lin</div>
+                </div>`,
+                b: `<div class="b-astral c-b c">
+                    <div style="font-family:var(--font-serif); font-size:24px; font-style:italic;">JAY LIN</div>
+                    <div class="astral-box" style="display:flex; justify-content:space-between; align-items:center;">
+                        <span>CLASS</span> <span style="color:#a78bfa;">CONCEPT ARTIST</span>
+                    </div>
+                    <div class="astral-box" style="display:flex; justify-content:space-between; align-items:center;">
+                        <span>SKILL</span> <span style="font-family:var(--font-mono); font-size:9px;">99.9% MAX</span>
+                    </div>
+                    <div class="astral-box">
+                        <div style="font-size: 8px; margin-bottom: 5px; opacity: 0.5;">CONTACT LOG_</div>
+                        ${p.e}<br>${p.w}
+                    </div>
+                </div>`,
+            },
+            {
+                l: "14. IRIDESCENT PEARL",
+                cls: "holo",
                 f: `<div class="f-pearl c-f c">
                     <div class="pearl-txt">J.L</div>
                 </div>`,
                 b: `<div class="b-pearl c-b c">
                     <div class="pearl-lbl">Concept Designer</div>
                     <div class="pearl-contact">${p.e}<br>${p.w}</div>
-                </div>`
+                </div>`,
             },
             {
-                l: '15. VANTABLACK (VOID)', cls: 'matte',
+                l: "15. VANTABLACK (VOID)",
+                cls: "matte",
                 f: `<div class="f-void c-f c">
                     <div class="void-txt">JAY LIN</div>
                 </div>`,
                 b: `<div class="b-void c-b c">
-                    <div class="void-reveal">${p.r}<br><br>${p.e}<br>${p.w}</div>
-                </div>`
-            }
+                    <div class="void-reveal">
+                        <div style="font-size: 10px; color:#555; font-family:var(--font-mono); margin-bottom: 10px;">// SYSTEM OFFLINE. BACKUP ACTIVATED</div>
+                        <div style="border-left: 2px solid #333; padding-left: 10px;">
+                            <span style="font-size: 20px; font-weight: 800; color: #fff;">JAY LIN</span><br>
+                            <span style="font-size: 11px; color:#888; letter-spacing: 2px;">CONCEPT ARTIST</span>
+                        </div>
+                        <div style="margin-top: 20px; font-family:var(--font-mono); font-size: 10px; color:#666;">
+                            [E] ${p.e}<br>[W] ${p.w}
+                        </div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "16. ETHEREAL FLUID",
+                cls: "matte",
+                f: `<div class="f-fluid c-f c">
+                    <div class="fluid-bg"></div>
+                    <div class="fluid-glass">
+                        <div class="fluid-icon"></div>
+                        <div class="fluid-title">JAY LIN<br><span>CONCEPT DESIGN</span></div>
+                    </div>
+                </div>`,
+                b: `<div class="b-fluid c-b c">
+                    <div class="fluid-contact">
+                    <div class="fluid-contact">
+                        <div style="font-size:20px; font-weight:900; color:#fff; letter-spacing: 2px;">JAY_LIN</div>
+                        <div style="font-size:10px; color:#aaa; margin-bottom:15px; font-family:var(--font-mono);">[ CONCEPT_ARTIST ]</div>
+                        <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin: 10px 0;"></div>
+                        <div class="fluid-row" style="font-size: 10px;"><strong style="color:#555;">SRC: </strong>${p.e}</div>
+                        <div class="fluid-row" style="font-size: 10px;"><strong style="color:#555;">TRG: </strong>${p.w}</div>
+                    </div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "17. EMBOSSED ANIME CONTOUR",
+                cls: "matte",
+                f: `<div class="f-contour c-f c">
+                    <div class="contour-bg"></div>
+                    <img src="assets/anime_profile_2.png" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; position:absolute; z-index:1; opacity: 0.5;">
+                    <div class="contour-title" style="color:#111; font-weight: 800; font-size: 14px; letter-spacing: 4px; position: absolute; bottom: 20px; left: 20px; z-index: 2;">JAY LIN</div>
+                </div>`,
+                b: `<div class="b-contour c-b c">
+                    <div class="contour-info">
+                        <div style="font-size:20px; font-weight:800; color:#1f2a33;">${p.n}</div>
+                        <div style="font-size:12px; font-weight:600; color:#38bdf8; margin-bottom:20px; letter-spacing:2px;">${p.r}</div>
+                        <div class="contour-row">${p.e}</div>
+                        <div class="contour-row">${p.w}</div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "18. FROSTED GRIMOIRE",
+                cls: "glass",
+                f: `<div class="f-grim c-f c">
+                    <div class="grim-bg"></div>
+                    <div class="grim-circle">
+                        <div class="grim-runes">&#x274B;</div>
+                    </div>
+                    <div class="grim-overlay"></div>
+                    <div class="grim-title">GRIMOIRE</div>
+                </div>`,
+                b: `<div class="b-grim c-b c">
+                    <div class="grim-text">
+                        <div style="color:#d4af37; font-size:16px; margin-bottom:10px;">${p.n}</div>
+                        <div style="color:#fff; font-size:10px;">${p.r}</div>
+                        <br>
+                        <div style="color:#aaa; font-size:10px;">${p.e}<br>${p.w}</div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "19. PRISMATIC CRYSTAL",
+                cls: "glass",
+                f: `<div class="f-prism c-f c">
+                    <div class="prism-shard"></div>
+                    <div class="prism-title">J.L</div>
+                </div>`,
+                b: `<div class="b-prism c-b c">
+                    <div class="prism-content">
+                    <div class="prism-content">
+                        <div style="font-size:20px; font-weight: 900; color:#333; letter-spacing: 2px;">JAY LIN</div>
+                        <div style="font-size:10px; color:#999; margin-bottom:10px; letter-spacing: 3px; font-family:var(--font-mono);">CONCEPT ARTIST</div>
+                        <div style="height: 2px; width: 40px; background: #ddd; margin-bottom: 20px;"></div>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                            <div style="font-size:10px; color:#777; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 4px;">${p.e}</div>
+                            <div style="font-size:10px; color:#777; background: rgba(0,0,0,0.03); padding: 8px; border-radius: 4px;">${p.w}</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>`,
+            },
+            {
+                l: "20. FLOATING SIGIL",
+                cls: "matte",
+                f: `<div class="f-sigil c-f c">
+                    <div class="sigil-mark">&#x27E1;</div>
+                    <div class="sigil-title">CONCEPTUAL</div>
+                </div>`,
+                b: `<div class="b-sigil c-b c">
+                    <div class="sigil-info">
+                        <div style="color:#e2e8f0; font-size:16px;">${p.n}</div>
+                        <div style="color:#94a3b8; font-size:10px; margin-bottom:20px;">${p.r}</div>
+                        <div style="color:#64748b; font-size:10px;">${p.e}<br>${p.w}</div>
+                    </div>
+                </div>`,
+            },
         ];
 
-        const cCont = document.getElementById('c-cont');
+        const cCont = document.getElementById("c-cont");
 
-        cards.forEach(d => {
+        cards.forEach((d) => {
             let html = `
             <div class="scene">
                 <div class="label">

@@ -5,9 +5,9 @@
 
 /* --- GENERAL CARD SETUP --- */
 .card-content {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 /* =========================================================================
@@ -15,131 +15,135 @@
    References: Layered anime composition, grid dots, huge transparency text, cyan/blue
    ========================================================================= */
 .f-awaken {
-    background: linear-gradient(135deg, #093f75 0%, #0093bf 100%);
-    color: #fff;
-    overflow: hidden;
+  background: linear-gradient(135deg, #093f75 0%, #0093bf 100%);
+  color: #fff;
+  overflow: hidden;
 }
 
 /* Decorative grid dots on the left edge */
 .f-awaken::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    width: 60px;
-    height: 80px;
-    background-image: radial-gradient(#fff 1px, transparent 1px);
-    background-size: 8px 8px;
-    opacity: 0.3;
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 80px;
+  background-image: radial-gradient(#fff 1px, transparent 1px);
+  background-size: 8px 8px;
+  opacity: 0.3;
 }
 
 .awaken-vert-title {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 42px;
-    font-weight: 900;
-    font-family: var(--font-display);
-    color: rgba(255, 255, 255, 0.9);
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    line-height: 0.8;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 42px;
+  font-weight: 900;
+  font-family: var(--font-display);
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 0.8;
 }
 
 .awaken-hero-text {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 90px;
-    font-weight: 900;
-    font-family: var(--font-display);
-    white-space: nowrap;
-    letter-spacing: 15px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    opacity: 0.6;
-    mix-blend-mode: overlay;
-    z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  font-weight: 900;
+  font-family: var(--font-display);
+  white-space: nowrap;
+  letter-spacing: 15px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.6;
+  mix-blend-mode: overlay;
+  z-index: 1;
 }
 
 .awaken-top-slogan {
-    position: absolute;
-    top: 20px;
-    left: 80px;
-    font-family: var(--font-display);
-    font-weight: 300;
-    font-size: 32px;
-    letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .awaken-bottom-bar {
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-    font-size: 10px;
-    font-family: var(--font-ui);
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    z-index: 2;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 10px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 2;
 }
 
 .awaken-box {
-    background: #fff;
-    color: #093f75;
-    padding: 2px 8px;
-    font-weight: 900;
-    letter-spacing: 2px;
+  background: #fff;
+  color: #093f75;
+  padding: 2px 8px;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .b-awaken {
-    background: linear-gradient(135deg, #093f75 0%, #007799 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background: linear-gradient(135deg, #093f75 0%, #007799 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .awaken-back-logo {
-    border: 1px dashed rgba(255, 255, 255, 0.4);
-    padding: 15px 30px;
-    font-family: var(--font-display);
-    font-weight: 300;
-    font-size: 24px;
-    letter-spacing: 6px;
-    color: rgba(255, 255, 255, 0.9);
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  padding: 15px 30px;
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .awaken-card-insert {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 120px;
-    height: 70px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), #a0d8ef);
-    transform: rotate(-10deg);
-    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
-    border: 2px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), #a0d8ef);
+  transform: rotate(-10deg);
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .awaken-card-insert span {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 11px;
-    color: #093f75;
-    transform: rotate(-5deg);
-    font-weight: 600;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 11px;
+  color: #093f75;
+  transform: rotate(-5deg);
+  font-weight: 600;
 }
 
 /* =========================================================================
@@ -147,108 +151,115 @@
    References: Minimalism, off-black, gold sweeping signature, QR code, structural UI
    ========================================================================= */
 .f-metro {
-    background: #1c1c1c;
-    /* Off-black charcoal */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  background: #1c1c1c;
+  /* Off-black charcoal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .metro-signature {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 1;
-    color: #d4af37;
-    /* Metallic Gold */
-    /* Simulating a sweeping physical foil signature */
-    background: linear-gradient(calc(var(--angle, 45deg)), #997a00, #eed971, #fff2a8, #eed971, #997a00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  color: #d4af37;
+  /* Metallic Gold */
+  /* Simulating a sweeping physical foil signature */
+  background: linear-gradient(
+    calc(var(--angle, 45deg)),
+    #997a00,
+    #eed971,
+    #fff2a8,
+    #eed971,
+    #997a00
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .metro-brand {
-    font-family: var(--font-ui);
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 8px;
-    color: #a39571;
-    text-transform: uppercase;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  color: #a39571;
+  text-transform: uppercase;
 }
 
 .b-metro {
-    background: #1c1c1c;
-    color: #fff;
-    padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: #1c1c1c;
+  color: #fff;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .metro-name-ch {
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #e8e8e8;
-    margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #e8e8e8;
+  margin-bottom: 2px;
 }
 
 .metro-title-ch {
-    font-size: 10px;
-    color: #a39571;
-    letter-spacing: 1px;
+  font-size: 10px;
+  color: #a39571;
+  letter-spacing: 1px;
 }
 
 .metro-name-en {
-    font-size: 16px;
-    margin-top: 15px;
-    color: #e8e8e8;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #e8e8e8;
 }
 
 .metro-title-en {
-    font-size: 9px;
-    color: #a39571;
-    margin-top: 2px;
+  font-size: 9px;
+  color: #a39571;
+  margin-top: 2px;
 }
 
 .metro-contact {
-    margin-top: 30px;
-    font-size: 9px;
-    color: #888;
-    line-height: 1.8;
-    font-family: var(--font-ui);
-    letter-spacing: 0.5px;
+  margin-top: 30px;
+  font-size: 9px;
+  color: #888;
+  line-height: 1.8;
+  font-family: var(--font-ui);
+  letter-spacing: 0.5px;
 }
 
 .metro-contact span {
-    color: #e8e8e8;
-    display: inline-block;
-    width: 30px;
+  color: #e8e8e8;
+  display: inline-block;
+  width: 30px;
 }
 
 .metro-qr {
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    padding: 4px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  padding: 4px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
 }
 
 .metro-qr div {
-    background: #1c1c1c;
-    border-radius: 1px;
+  background: #1c1c1c;
+  border-radius: 1px;
 }
 
 /* =========================================================================
@@ -256,113 +267,120 @@
    References: Deep black/brown, butterfly gold logo, calligraphy, heritage layout
    ========================================================================= */
 .f-xiu {
-    background: #0f0a08;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  background: #0f0a08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .xiu-butterfly {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(calc(var(--angle, 45deg)), #b8860b, #ffd700, #b8860b);
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>') center / contain no-repeat;
-    mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>') center / contain no-repeat;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    calc(var(--angle, 45deg)),
+    #b8860b,
+    #ffd700,
+    #b8860b
+  );
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>')
+    center / contain no-repeat;
+  mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 10.5 5 8 5C5.5 5 2 4 2 8C2 12 7 13 12 18C17 13 22 12 22 8C22 4 18.5 5 16 5C13.5 5 12 2 12 2ZM12 4.5C12 4.5 13.5 7 16 7C18.5 7 20 6.5 20 8.5C20 10.5 17 11.5 12 15C7 11.5 4 10.5 4 8.5C4 6.5 5.5 7 8 7C10.5 7 12 4.5 12 4.5Z" /></svg>')
+    center / contain no-repeat;
 }
 
 .xiu-brand {
-    font-family: var(--font-serif);
-    font-size: 14px;
-    letter-spacing: 12px;
-    color: #e5c158;
-    text-align: center;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  letter-spacing: 12px;
+  color: #e5c158;
+  text-align: center;
 }
 
 .xiu-sub {
-    font-family: var(--font-cjk);
-    font-size: 12px;
-    letter-spacing: 4px;
-    color: #b8860b;
+  font-family: var(--font-cjk);
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #b8860b;
 }
 
 .b-xiu {
-    background: #0f0a08;
-    padding: 30px;
-    color: #e5c158;
+  background: #0f0a08;
+  padding: 30px;
+  color: #e5c158;
 }
 
 .xiu-top-lbl {
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--font-cjk);
-    font-size: 10px;
-    color: #b8860b;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-cjk);
+  font-size: 10px;
+  color: #b8860b;
 }
 
 .xiu-name-line {
-    margin-top: 30px;
-    font-family: var(--font-cjk);
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  margin-top: 30px;
+  font-family: var(--font-cjk);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .xiu-name-line span {
-    font-family: var(--font-serif);
-    font-size: 12px;
-    letter-spacing: 4px;
-    opacity: 0.8;
+  font-family: var(--font-serif);
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: 0.8;
 }
 
 .xiu-rank-bar {
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .xiu-blocks {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 }
 
 .xiu-block {
-    width: 12px;
-    height: 12px;
-    background: #e5c158;
-    box-shadow: 0 0 5px rgba(229, 193, 88, 0.5);
+  width: 12px;
+  height: 12px;
+  background: #e5c158;
+  box-shadow: 0 0 5px rgba(229, 193, 88, 0.5);
 }
 
 .xiu-block.dim {
-    background: #3a2b12;
-    box-shadow: none;
+  background: #3a2b12;
+  box-shadow: none;
 }
 
 .xiu-calligraphy-bg {
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: var(--font-cjk);
-    font-size: 140px;
-    font-weight: 900;
-    color: rgba(184, 134, 11, 0.05);
-    /* Extremely subtle gold watermark */
-    pointer-events: none;
-    writing-mode: vertical-rl;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-cjk);
+  font-size: 140px;
+  font-weight: 900;
+  color: rgba(184, 134, 11, 0.05);
+  /* Extremely subtle gold watermark */
+  pointer-events: none;
+  writing-mode: vertical-rl;
 }
 
 .xiu-footer {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    font-family: var(--font-cjk);
-    font-size: 10px;
-    line-height: 1.8;
-    color: #8c7547;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: var(--font-cjk);
+  font-size: 10px;
+  line-height: 1.8;
+  color: #8c7547;
 }
 
 /* =========================================================================
@@ -370,53 +388,53 @@
    Minimal typography, giant tracking, architectural feel
    ========================================================================= */
 .f-mono {
-    background: #e0e0e0;
-    color: #111;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: #e0e0e0;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mono-txt {
-    font-size: 80px;
-    font-weight: 900;
-    letter-spacing: -4px;
-    text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: -4px;
+  text-transform: uppercase;
 }
 
 .mono-sub {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 12px;
-    margin-top: -10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 12px;
+  margin-top: -10px;
 }
 
 .b-mono {
-    background: #111;
-    color: #e0e0e0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
+  background: #111;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
 }
 
 .mono-info {
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -1px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .mono-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    font-size: 11px;
-    font-family: var(--font-mono);
-    font-weight: 600;
-    border-top: 2px solid #333;
-    padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-top: 2px solid #333;
+  padding-top: 20px;
 }
 
 /* =========================================================================
@@ -424,120 +442,143 @@
    Soft light, 3D embossed geometry, pure white aesthetic
    ========================================================================= */
 .f-clay {
-    background: #f0f0f3;
-    color: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 10px 10px 20px #d1d1d5, inset -10px -10px 20px #ffffff;
+  background: #f0f0f3;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    inset 10px 10px 20px #d1d1d5,
+    inset -10px -10px 20px #ffffff;
 }
 
 .clay-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #f0f0f3;
-    box-shadow: 15px 15px 30px #d1d1d5, -15px -15px 30px #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: -2px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #f0f0f3;
+  box-shadow:
+    15px 15px 30px #d1d1d5,
+    -15px -15px 30px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -2px;
 }
 
 .b-clay {
-    background: #f0f0f3;
-    color: #555;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+  background: #f0f0f3;
+  color: #555;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .clay-bar {
-    background: #f0f0f3;
-    padding: 15px 20px;
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px #d1d1d5, -5px -5px 10px #ffffff;
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  background: #f0f0f3;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow:
+    5px 5px 10px #d1d1d5,
+    -5px -5px 10px #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 /* =========================================================================
-   DESIGN 06: FLUID MESH
-   Abstract mesh gradients, frosted glass typography
+   DESIGN 06: MECHA BLUEPRINT
+   Minimal sci-fi schematic blueprint
    ========================================================================= */
-.f-mesh {
-    background: radial-gradient(circle at top left, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 40px;
+.f-mecha {
+  background: #001a33;
+  background-image:
+    linear-gradient(rgba(0, 150, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 150, 255, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: #00aaff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 150, 255, 0.5);
+  box-shadow: inset 0 0 30px rgba(0, 100, 255, 0.5);
 }
 
-.f-mesh::before {
-    content: '';
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    background: radial-gradient(circle at center, #a18cd1 0%, transparent 50%), radial-gradient(circle at bottom right, #fbc2eb 0%, transparent 50%);
-    filter: blur(60px);
-    z-index: 0;
+.mecha-hud {
+  border: 1px solid #00aaff;
+  padding: 20px;
+  background: rgba(0, 50, 100, 0.5);
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  text-align: center;
+  position: relative;
 }
 
-.mesh-glass {
-    position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 20px;
-    border-radius: 20px;
-    color: #fff;
+.mecha-hud::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00aaff;
+  border-left: 2px solid #00aaff;
 }
 
-.mesh-name {
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin-bottom: 5px;
+.mecha-hud::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #00aaff;
+  border-right: 2px solid #00aaff;
 }
 
-.mesh-title {
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.9;
+.mecha-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
 }
 
-.b-mesh {
-    background: #fff;
-    color: #333;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.mecha-title {
+  font-size: 9px;
+  letter-spacing: 2px;
+  opacity: 0.8;
 }
 
-.mesh-row {
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
+.b-mecha {
+  background: #001a33;
+  color: #00aaff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  border: 1px solid rgba(0, 150, 255, 0.5);
 }
 
-.mesh-row:last-child {
-    border-bottom: none;
+.mecha-row {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px dashed rgba(0, 150, 255, 0.3);
+  padding-bottom: 15px;
+}
+
+.mecha-row span {
+  font-weight: 800;
+  opacity: 0.5;
 }
 
 /* =========================================================================
@@ -545,63 +586,63 @@
    Translucent, blurred, glowing neon text
    ========================================================================= */
 .f-neon {
-    background: rgba(10, 10, 10, 0.4);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 255, 150, 0.3);
-    color: #00ff96;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 150, 0.3);
+  color: #00ff96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .neon-ring {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border: 20px solid rgba(0, 255, 150, 0.1);
-    filter: blur(10px);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 20px solid rgba(0, 255, 150, 0.1);
+  filter: blur(10px);
 }
 
 .neon-txt {
-    font-size: 120px;
-    font-weight: 900;
-    letter-spacing: -5px;
-    text-shadow: 0 0 40px rgba(0, 255, 150, 0.5);
-    z-index: 1;
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: -5px;
+  text-shadow: 0 0 40px rgba(0, 255, 150, 0.5);
+  z-index: 1;
 }
 
 .b-neon {
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 255, 150, 0.3);
-    color: #00ff96;
-    font-family: var(--font-mono);
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 150, 0.3);
+  color: #00ff96;
+  font-family: var(--font-mono);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .neon-r {
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom: 1px solid rgba(0, 255, 150, 0.3);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 255, 150, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 255, 150, 0.5);
 }
 
 .neon-row {
-    font-size: 14px;
-    margin-bottom: 10px;
-    display: flex;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 .neon-row span {
-    width: 60px;
-    opacity: 0.5;
+  width: 60px;
+  opacity: 0.5;
 }
 
 /* =========================================================================
@@ -609,48 +650,50 @@
    Silver metallic sheen, blind deboss
    ========================================================================= */
 .f-titan {
-    background: linear-gradient(135deg, #bbb, #e6e6e6, #bbb);
-    color: #888;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: linear-gradient(135deg, #bbb, #e6e6e6, #bbb);
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titan-emboss {
-    font-size: 54px;
-    font-weight: 900;
-    letter-spacing: 5px;
-    color: transparent;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), -1px -1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: transparent;
+  text-shadow:
+    1px 1px 2px rgba(255, 255, 255, 0.8),
+    -1px -1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .b-titan {
-    background: #d4d4d4;
-    color: #444;
-    display: flex;
-    padding: 40px;
-    box-sizing: border-box;
+  background: #d4d4d4;
+  color: #444;
+  display: flex;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .titan-left {
-    width: 40%;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1;
-    text-transform: uppercase;
+  width: 40%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .titan-right {
-    flex: 1;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: var(--font-mono);
+  flex: 1;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-mono);
 }
 
 /* =========================================================================
@@ -658,45 +701,65 @@
    Deep physical texture, minimal contrast
    ========================================================================= */
 .f-carb {
-    background: #111;
-    background-image: linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a), linear-gradient(45deg, #0a0a0a 25%, transparent 25%, transparent 75%, #0a0a0a 75%, #0a0a0a);
-    background-size: 4px 4px;
-    background-position: 0 0, 2px 2px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #111;
+  background-image:
+    linear-gradient(
+      45deg,
+      #0a0a0a 25%,
+      transparent 25%,
+      transparent 75%,
+      #0a0a0a 75%,
+      #0a0a0a
+    ),
+    linear-gradient(
+      45deg,
+      #0a0a0a 25%,
+      transparent 25%,
+      transparent 75%,
+      #0a0a0a 75%,
+      #0a0a0a
+    );
+  background-size: 4px 4px;
+  background-position:
+    0 0,
+    2px 2px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carb-logo {
-    font-size: 100px;
-    font-style: italic;
-    font-weight: 900;
-    letter-spacing: -8px;
-    text-shadow: -1px -1px 0 #000, 1px 1px 0 #222;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -8px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px 1px 0 #222;
 }
 
 .b-carb {
-    background: #111;
-    color: #888;
-    font-family: var(--font-mono);
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
+  background: #111;
+  color: #888;
+  font-family: var(--font-mono);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
 }
 
 .carb-row {
-    font-size: 12px;
-    display: flex;
-    border-bottom: 1px solid #222;
-    padding-bottom: 10px;
+  font-size: 12px;
+  display: flex;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
 }
 
 .carb-row span {
-    width: 80px;
-    color: #555;
+  width: 80px;
+  color: #555;
 }
 
 /* =========================================================================
@@ -704,274 +767,277 @@
    Abstract topographic lines, elegant serif, dark mode premium
    ========================================================================= */
 .f-topo {
-    background: #111;
-    color: #fff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topo-pattern {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background-image: repeating-radial-gradient(circle at center, transparent 0, transparent 5px, rgba(255, 255, 255, 0.05) 6px, rgba(255, 255, 255, 0.05) 7px);
-    z-index: 0;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: repeating-radial-gradient(
+    circle at center,
+    transparent 0,
+    transparent 5px,
+    rgba(255, 255, 255, 0.05) 6px,
+    rgba(255, 255, 255, 0.05) 7px
+  );
+  z-index: 0;
 }
 
 .topo-text {
-    position: relative;
-    z-index: 1;
-    font-size: 72px;
-    font-family: var(--font-serif);
-    font-weight: 400;
-    font-style: italic;
-    color: #fff;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  font-size: 72px;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 .b-topo {
-    background: #111;
-    color: #ddd;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: #111;
+  color: #ddd;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .topo-info {
-    font-family: var(--font-serif);
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #fff;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .topo-sub {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
 }
 
 .topo-row {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 13px;
-    margin-bottom: 15px;
-    opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  opacity: 0.8;
 }
 
 /* =========================================================================
-   DESIGN 11: SWISS POSTER
-   Bold typography, diagonal intersection, strict layout
+   DESIGN 11: EXHIBITION TICKET
+   High contrast, huge overlapping typography and slash separator
    ========================================================================= */
-.f-swiss {
-    background: #e32636;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    overflow: hidden;
+.f-ticket {
+  background: #0f0f0f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 30px;
+  justify-content: flex-end;
 }
 
-.f-swiss::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    width: 200%;
-    height: 200%;
-    background: #fff;
-    transform: rotate(45deg);
-    z-index: 0;
+.ticket-slash {
+  position: absolute;
+  top: -10%;
+  left: 45%;
+  width: 1px;
+  height: 120%;
+  background: #e32636;
+  transform: rotate(18deg);
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(227, 38, 54, 0.4);
 }
 
-.swiss-header {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    font-size: 100px;
-    font-weight: 900;
-    line-height: 0.8;
-    letter-spacing: -4px;
-    width: 60%;
+.ticket-huge {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -5px;
+  color: #fff;
+  z-index: 1;
 }
 
-.swiss-footer {
-    position: relative;
-    z-index: 1;
-    color: #e32636;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: right;
-    letter-spacing: -1px;
+.ticket-info {
+  position: relative;
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #aaa;
+  text-align: right;
 }
 
-.b-swiss {
-    background: #fff;
-    color: #000;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
+.b-ticket {
+  background: #fff;
+  color: #111;
+  display: flex;
+  padding: 20px;
 }
 
-.swiss-block {
-    background: #f5f5f5;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 16px;
-    font-weight: 700;
+.ticket-stub-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 60px;
+  width: 1px;
+  border-left: 2px dashed #ccc;
 }
 
-.swiss-block svg {
-    fill: #e32636;
+.ticket-b-wrap {
+  margin-left: 60px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
-/* --- SOCIAL ICONS BASE CSS --- */
-.ico {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    flex-shrink: 0;
+.ticket-b-head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.ico-sm {
-    width: 14px;
-    height: 14px;
-}
-
-.ico-md {
-    width: 24px;
-    height: 24px;
+.ticket-b-footer {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: #aaa;
 }
 
 /* =========================================================================
-   DESIGN 12: OBSIDIAN GLASS
-   Deep dark luxurious glass with aura reflection gradient
+   DESIGN 12: DARK MATTER NEXUS
+   Dark space core with glowing purple aura
    ========================================================================= */
-.f-obs {
-    background: #050505;
-    color: #efefef;
-    display: flex;
-    align-items: flex-end;
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
+.f-dark-nexus {
+  background: radial-gradient(circle at center, #1a1a2e 0%, #000 80%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.f-obs::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 0%;
-    width: 150%;
-    height: 150%;
-    background: conic-gradient(from 180deg at 50% 50%, #2a8af6 0deg, #a853ba 180deg, #e92a67 360deg);
-    filter: blur(80px);
-    opacity: 0.2;
-    z-index: 0;
+.nexus-core {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow:
+    0 0 50px #4f46e5,
+    inset 0 0 20px #818cf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(129, 140, 248, 0.5);
 }
 
-.obs-glass {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 30px;
-    background: rgba(20, 20, 20, 0.4);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+.nexus-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #818cf8;
+  text-shadow: 0 0 10px #4f46e5;
 }
 
-.obs-title {
-    font-size: 36px;
-    font-weight: 200;
-    letter-spacing: 4px;
+.b-dark-nexus {
+  background: #000;
+  color: #818cf8;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid rgba(79, 70, 229, 0.3);
 }
 
-.b-obs {
-    background: #050505;
-    color: #efefef;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.obs-logo {
-    font-size: 120px;
-    font-weight: 900;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
-    color: transparent;
-    letter-spacing: -10px;
-}
-
-.obs-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 60%;
-    z-index: 1;
-}
-
-.obs-item {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+.nexus-item {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.8;
 }
 
 /* =========================================================================
-   DESIGN 13: FROSTED POLYCARBONATE
-   Clean, white glassmorphism
+   DESIGN 13: ASTRAL PROJECTION
+   Rotating magic circle projection
    ========================================================================= */
-.f-frost {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: #111;
-    display: flex;
-    align-items: flex-end;
-    padding: 40px;
-    box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.5);
+.f-astral {
+  background: rgba(20, 20, 40, 0.6);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.frost-txt {
-    font-size: 48px;
-    font-weight: 300;
-    letter-spacing: -2px;
+.astral-ring {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px dashed rgba(167, 139, 250, 0.5);
+  animation: rotate 20s linear infinite;
 }
 
-.b-frost {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(40px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+.astral-txt {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 0 20px rgba(167, 139, 250, 0.8);
+  z-index: 1;
 }
 
-.frost-box {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+.b-astral {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+  color: #ddd;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.astral-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 1px;
+  border-left: 2px solid #a78bfa;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* =========================================================================
@@ -979,50 +1045,57 @@
    Elegant minimal gradient foil
    ========================================================================= */
 .f-pearl {
-    background: #fdfdfd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #fdfdfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pearl-txt {
-    font-family: var(--font-serif);
-    font-size: 80px;
-    font-weight: 400;
-    font-style: italic;
-    background-image: linear-gradient(calc(var(--angle, 45deg)), #ffb6c1, #add8e6, #fffacd, #e6e6fa, #ffb6c1);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding-right: 20px;
+  font-family: var(--font-serif);
+  font-size: 80px;
+  font-weight: 400;
+  font-style: italic;
+  background-image: linear-gradient(
+    calc(var(--angle, 45deg)),
+    #ffb6c1,
+    #add8e6,
+    #fffacd,
+    #e6e6fa,
+    #ffb6c1
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-right: 20px;
 }
 
 /* padding for italic clip bug */
 .b-pearl {
-    background: #fdfdfd;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #444;
+  background: #fdfdfd;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #444;
 }
 
 .pearl-lbl {
-    font-family: var(--font-serif);
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 30px;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 30px;
 }
 
 .pearl-contact {
-    font-size: 14px;
-    line-height: 2;
-    font-weight: 600;
-    font-family: var(--font-ui);
-    letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 600;
+  font-family: var(--font-ui);
+  letter-spacing: 1px;
 }
 
 /* =========================================================================
@@ -1030,42 +1103,690 @@
    Pure light absorption, revealed by mouse tracking gloss
    ========================================================================= */
 .f-void {
-    background: #000;
+  background: #000;
 }
 
 .void-txt {
-    font-size: 100px;
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    letter-spacing: -6px;
-    background-image: radial-gradient(circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)), rgba(255, 255, 255, 0.8) 0%, transparent 25%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-color: #050505;
+  font-size: 100px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: -6px;
+  background-image: radial-gradient(
+    circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)),
+    rgba(255, 255, 255, 0.8) 0%,
+    transparent 25%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: #050505;
 }
 
 .b-void {
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    text-align: center;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
 }
 
 .void-reveal {
-    font-size: 20px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    background-image: radial-gradient(circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)), rgba(255, 255, 255, 1) 0%, transparent 40%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-color: #080808;
-    text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  background-image: radial-gradient(
+    circle at calc(100% * var(--mx, 0.5)) calc(100% * var(--my, 0.5)),
+    rgba(255, 255, 255, 1) 0%,
+    transparent 40%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-color: #080808;
+  text-transform: uppercase;
+}
+
+/* =========================================================================
+   DESIGN 02: HOLOGRAPHIC CUTOUT
+   Metallic dark gray, holographic geometric logo
+   ========================================================================= */
+.f-holo {
+  background: #1a1c1e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+}
+
+.holo-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.holo-cutout {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #444, #222);
+  box-shadow:
+    inset 2px 2px 5px #111,
+    inset -2px -2px 5px #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holo-cutout.small {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.holo-inner {
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(
+    calc(var(--angle, 45deg)),
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #f7d794
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(78, 205, 196, 0.5);
+  transform: rotateZ(calc(var(--angle, 45deg)));
+}
+
+.holo-logotype {
+  text-align: center;
+}
+
+.holo-logo-text {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #eee;
+  margin-bottom: 5px;
+}
+
+.holo-logo-sub {
+  font-size: 8px;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.b-holo {
+  background: #1a1c1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.holo-row {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #ccc;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.holo-row span {
+  color: #666;
+  width: 40px;
+}
+
+/* =========================================================================
+   DESIGN 03: BOTANICAL SILHOUETTE -> JL LOGO MONO
+   Minimalist Typography Logo
+   ========================================================================= */
+.f-botanic {
+  background: #fbf9f4;
+  color: #181a1c;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot-frame {
+  border: 1px solid #dcd7c9;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.jl-logo-huge {
+  font-family: var(--font-display);
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 0.8;
+  color: #181a1c;
+  letter-spacing: -15px;
+}
+
+.bot-title-vert {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #181a1c;
+}
+
+.bot-title-horiz {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #aeb5b8;
+  z-index: 2;
+}
+
+.bot-deco-dot {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  background: #e32636;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bot-deco-line {
+  position: absolute;
+  top: 35px;
+  right: 17px;
+  width: 1px;
+  height: 40px;
+  background: #dcd7c9;
+  z-index: 2;
+}
+
+.b-botanic {
+  background: #fbf9f4;
+  border: 1px solid #dcd7c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.bot-b-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: #181a1c;
+  margin-bottom: 5px;
+}
+
+.bot-b-sub {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.bot-b-contact {
+  border-top: 1px solid #dcd7c9;
+  padding-top: 20px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #475569;
+  line-height: 2;
+}
+
+/* =========================================================================
+   DESIGN 06: ARTBOOK COVER
+   Japanese Graphic Design / Yoneyama Mai style negative space layout
+   ========================================================================= */
+.f-artbook {
+  background: #fdfbf7;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.art-backplate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.art-vert-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 1px;
+  background: #111;
+  z-index: 2;
+}
+
+.art-flow-lines {
+  position: absolute;
+  bottom: -20%;
+  right: -20%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.art-flow-lines.alt {
+  bottom: -40%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.art-title-group {
+  position: relative;
+  z-index: 2;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.art-name {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.art-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 4px;
+  writing-mode: unset;
+  color: #e32636;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.b-artbook {
+  background: #111;
+  color: #eee;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.art-b-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.art-b-dot {
+  width: 8px;
+  height: 8px;
+  background: #e32636;
+  border-radius: 50%;
+}
+
+.art-b-content {
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.art-b-row {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.art-barcode {
+  width: 100%;
+  height: 30px;
+  background: repeating-linear-gradient(
+    90deg,
+    #eee 0px,
+    #eee 2px,
+    transparent 2px,
+    transparent 5px,
+    #eee 5px,
+    #eee 6px,
+    transparent 6px,
+    transparent 9px
+  );
+  opacity: 0.5;
+}
+
+/* =========================================================================
+   DESIGN 16: ETHEREAL FLUID
+   Dark fluid magic, frosted glass
+   ========================================================================= */
+.f-fluid {
+  background: #121822;
+  /* very dark blue */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fluid-bg {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background:
+    radial-gradient(
+      circle at 30% 70%,
+      rgba(45, 80, 110, 0.4) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(70, 50, 100, 0.3) 0%,
+      transparent 50%
+    );
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.fluid-glass {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.fluid-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.fluid-title {
+  color: #e2e8f0;
+  font-size: 18px;
+  font-family: var(--font-serif);
+  letter-spacing: 2px;
+}
+
+.fluid-title span {
+  font-size: 10px;
+  font-family: var(--font-ui);
+  color: #94a3b8;
+  letter-spacing: 4px;
+}
+
+.b-fluid {
+  background: #121822;
+  padding: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.fluid-contact {
+  color: #cbd5e1;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.fluid-row {
+  opacity: 0.7;
+}
+
+/* =========================================================================
+   DESIGN 17: EMBOSSED JL LOGO
+   White magic texture, deep drop shadow branding
+   ========================================================================= */
+.f-contour {
+  background: #f1f5f9;
+  color: #1f2a33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    inset 10px 10px 20px #e2e8f0,
+    inset -10px -10px 20px #ffffff;
+}
+
+.contour-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.jl-logo-emboss {
+  font-family: var(--font-display);
+  font-size: 140px;
+  font-weight: 900;
+  color: #f1f5f9;
+  line-height: 0.8;
+  text-shadow:
+    -4px -4px 10px rgba(255, 255, 255, 1),
+    4px 4px 10px rgba(148, 163, 184, 0.5);
+  z-index: 1;
+  text-align: center;
+}
+
+.contour-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #1f2a33;
+  z-index: 2;
+}
+
+.b-contour {
+  background: #f1f5f9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contour-row {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* =========================================================================
+   DESIGN 18: FROSTED GRIMOIRE
+   Translucent runes on minimal pale gold and white background
+   ========================================================================= */
+.f-grim {
+  background: #fdfcf9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grim-bg {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: conic-gradient(from 0deg, #fdfcf9, #f7f1e3, #fdfcf9);
+  filter: blur(20px);
+}
+
+.grim-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+  z-index: 1;
+}
+
+.grim-runes {
+  font-size: 60px;
+  color: rgba(212, 175, 55, 0.4);
+}
+
+.grim-overlay {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.grim-title {
+  position: absolute;
+  bottom: 30px;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #887a59;
+  z-index: 3;
+}
+
+.b-grim {
+  background: #22201c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================================================================
+   DESIGN 19: PRISMATIC CRYSTAL
+   White space, holographic geometric reflection
+   ========================================================================= */
+.f-prism {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prism-shard {
+  width: 80px;
+  height: 120px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1)),
+    linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0 20px 50px rgba(168, 237, 234, 0.5);
+}
+
+.prism-title {
+  position: absolute;
+  bottom: 40px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 8px;
+  color: #333;
+}
+
+.b-prism {
+  background: #fafafa;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.prism-content {
+  line-height: 1.6;
+}
+
+/* =========================================================================
+   DESIGN 20: FLOATING SIGIL
+   Minimal soft cool gray, illuminated small sigil
+   ========================================================================= */
+.f-sigil {
+  background: #1e2530;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sigil-mark {
+  font-size: 60px;
+  color: #e2e8f0;
+  filter: drop-shadow(0 0 10px rgba(226, 232, 240, 0.6));
+  animation: sigilPulse 4s infinite alternate ease-in-out;
+}
+
+@keyframes sigilPulse {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(226, 232, 240, 0.3));
+    transform: scale(0.98);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 20px rgba(226, 232, 240, 0.8));
+    transform: scale(1.02);
+  }
+}
+
+.sigil-title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 12px;
+}
+
+.b-sigil {
+  background: #1e2530;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
